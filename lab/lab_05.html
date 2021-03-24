@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
@@ -11,85 +11,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <style>
         body {
-            background-image: url(https://i0.wp.com/farm1.static.flickr.com/269/31597850914_17566fa132_b.jpg?w=1100);
+            background-image: url(https://images.pexels.com/photos/63340/pexels-photo-63340.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
             background-size: cover;
+            text-align: center;
+            vertical-align:bottom ;
         }
-
-        p.dotted {
-            border-style: dotted;
-        }
-
-        p.dashed {
-            border-style: dashed;
-        }
-
-        p.solid {
-            border-style: solid;
-        }
-
-        p.double {
-            border-style: double;
-        }
-
-        p.groove {
-            border-style: groove;
-        }
-
-        p.ridge {
-            border-style: ridge;
-        }
-
-        p.inset {
-            border-style: inset;
-        }
-
-        p.outset {
-            border-style: outset;
-        }
-
-        p.none {
-            border-style: none;
-        }
-
-        p.hidden {
-            border-style: hidden;
-        }
-
-        p.mix {
-            border-style: dotted dashed solid double;
-        }
-
-        p.abc {
-            border-style: solid;
-            border-color: magenta blue;
-            border-width: 90px;
-            border-radius: 40px;
-        }
-
-        .aaa {
-            font-family: 'Train One', cursive;
-            font-style: oblique;
-            font-weight: 800;
-        }
-
+        
         table {
-            background-color: #4e3fc1;
-        }
-
-        tr:hover {
-            background-color: yellow;
-        }
-
-        th {
             text-align: center;
         }
+        table:hover {
+            background-color: rgb(255, 255, 255);
 
-        td {
-            vertical-align: bottom;
+        }
+
+        .day {
+            color: rgb(23, 127, 21);
+            
+            font-size: 2em;
+            background-color: lightcoral;
+        }
+
+        .teacher {
+            color: rgb(117, 155, 27);
+        }
+
+        td.abc {
+            font-size: 2em;
+            font-family: 'Train One', cursive;
+            font-weight: 900;
         }
     </style>
-
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
 
@@ -101,42 +53,10 @@
 <body>
 
 
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-        </tr>
-        <tr>
-            <td>Peter</td>
-            <td>Griffin</td>
-        </tr>
-        <tr>
-            <td>Lois</td>
-            <td>Griffin</td>
-        </tr>
-    </table>
-
-
-
-    <p class="aaa">
-        hello world seafood good
-    </p>
-
-    <a href="#">超連結</a>
-    <a href="#" target="_blank">超連結</a>
-    <a href="#" target="_top">超連結</a>
-
-
-
-
-    <input type="text"> ************
-
-
-
     <table border="10">
         <caption>課表</caption>
         <thead>
-            <tr>
+            <tr class="day">
 
                 <th></th>
 
@@ -152,18 +72,18 @@
 
                 <td style="font-family: 'Syne Mono', monospace;">8:10-9:00</td>
 
-                <td>數學</td>
-                <td>國文</td>
-                <td>自然</td>
-                <td>社會</td>
-                <td>體育</td>
+                <td><span style="color: rgb(43, 255, 0)">數學</span></td>
+                <td><span style="color: rgb(93, 0, 255)">國文</span></td>
+                <td><span style="color: darkgoldenrod;">自然</span></td>
+                <td><span style="color: rgb(255, 0, 34)">社會</span></td>
+                <td><span style="color: rgb(10, 106, 41)">體育</span></td>
 
             </tr>
             <tr>
 
                 <td style="font-family: 'Syne Mono', monospace;">9:10-10:00</td>
 
-                <td><span style="color: rgb(43, 255, 0)"></span>數學</span></td>
+                <td><span style="color: rgb(43, 255, 0)">數學</span></td>
                 <td><span style="color: deeppink;">美術</span></td>
                 <td><span style="color: dimgrey;">音樂</span></td>
                 <td><span style="color: rgb(255, 0, 34)">社會</span></td>
@@ -192,14 +112,13 @@
             </tr>
             <tr>
 
-                <td style="background-color: rgb(177, 201, 19);">12:00-13:00 </td>
-                <td colspan="5" style="text-align: center;;background-color: rgb(183, 201, 26);"> <span
-                        style="color: rgb(255, 0, 43);;font-size: 3em;">午休</span></td>
+                <td>12:00-13:00 </td>
+                <td class="abc" colspan="5">午休</td>
 
             </tr>
-            <tr class="ccc">
+            <tr class="teacher">
 
-                <td style="font-family: 'Syne Mono', monospace;">13:10-14:00</td>
+                <td style="font-family: 'Syne Mono', monospace;color: darkmagenta;">13:10-14:00</td>
 
                 <td>導師時間</td>
                 <td>導師時間</td>
@@ -231,7 +150,7 @@
 
                 <td style="font-family: 'Syne Mono', monospace;">16:10-17:00</td>
 
-                <td class="aaa">國文</td>
+                <td><span style="color: rgb(93, 0, 255)">國文</span></td>
                 <td><span style="color: rgb(10, 106, 41)">體育</span></td>
                 <td><span style="color: darkgoldenrod;">自然</span></td>
                 <td><span style="color: rgb(255, 0, 34)">社會</span></td>
@@ -241,34 +160,6 @@
             <thead>
 
     </table>
-
-    <a href="https://www.facebook.com/">Facebook</a>
-
-    <h1 id="heading">導師時間</h1>
-    <p class="content">
-        Content of the document
-    </p>
-    <p class="bbb">
-        hello world
-    </p>
-
-    <p class="dotted">A dotted border.</p>
-    <p class="dashed">A dashed border.</p>
-    <p class="solid">A solid border.</p>
-    <p class="double">A double border.</p>
-    <p class="groove">A groove border.</p>
-    <p class="ridge">A ridge border.</p>
-    <p class="inset">An inset border.</p>
-    <p class="outset">An outset border.</p>
-    <p class="none">No border.</p>
-    <p class="hidden">A hidden border.</p>
-    <p class="mix">A mixed border.</p>
-
-    <p class="abc">
-        hello world
-    </p>
-
-
 </body>
 
 </html>
