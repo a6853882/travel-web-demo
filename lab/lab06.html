@@ -1,20 +1,75 @@
 <!DOCTYPE html>
-<html lang="zh-Hant-TW">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+        }
 
+        header {
+            background-color: rgb(45, 163, 203);
+            text-align: center;
+        }
 
+        div.a {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+        }
+
+        main {
+            background-color: darkred;
+            flex-grow: 1;
+            font-size: 17px;
+            text-align: center;
+        }
+
+        aside {
+            background-color: deeppink;
+            flex-grow: 4;
+        }
+
+        footer {
+            background-color: dimgrey;
+        }
     </style>
 </head>
+
 <body>
-    <header></header>
-    <main>
-        
-    </main>
-    <footer></footer>
+    <header><b>選課系統</b></header>
+    <div class="a">
+        <main>歡迎使用選課系統<br>管理者您好<br>
+            <label for="cars"></label>
+            <select id="cars">
+                <option value="volvo">登出</option>
+            </select>
+            <p>
+            <p>
+            <p>
+                <label for="pig">公告系統:</label>
+                <select id="pig">
+                    <option value="volvo">公告資料</option>
+                    <option value="volvo">公告管理</option>
+                </select>
+            <P>公告資料</P>
+            <P>公告管理</P>
+        </main>
+
+
+        <aside>aside</aside>
+    </div>
+    <footer>footer</footer>
+
 </body>
+
 </html>
