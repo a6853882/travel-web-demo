@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="path/to/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Train+One&display=swap" rel="stylesheet">
     <style>
-        body {
+          body {
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -36,21 +38,58 @@
         }
 
         aside {
-            background-color: rgb(119, 175, 225);
+            background-color: rgb(173, 235, 238);
             flex-grow: 1;
         }
         td{
             text-align: center;
             font-size: 40px;
         }
+        th{
+            font-size: 30px;
+        }
 
         footer {
             background-color: rgb(238, 70, 168);
         }
+        
+        
+        table {
+            text-align: center;
+        }
+        table:hover {
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        #xyz {
+            color: rgb(23, 127, 21);
+            
+            font-size: 2em;
+            background-color: lightcoral;
+        }
+
+        .teacher {
+            color: rgb(117, 155, 27);
+        }
+
+        td.abc {
+            font-size: 2em;
+            font-family: 'Train One', cursive;
+            font-weight: 900;
+        }
     </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
+
     <header><b>選課系統</b></header>
     <div class="a">
         <main>歡迎使用選課系統<br>管理者您好<br>
@@ -103,117 +142,111 @@
 
 
         <aside>
-            <table border="1">
-                <caption></caption>
+            
+            <table border="10">
                 <thead>
-                    <tr>
-
-                        <th>編輯</th>
-
-                        <th>選課編碼</th>
-                        <th>課程系別</th>
-                        <th>課程名稱</th>
-                        <th>學分</th>
-                        <th>已選填人數</th>
-                        <th>開課人數</th>
-                        <th>狀況</th>
-
+                    <tr id="xyz">
+                        <th></th>
+        
+                        <th>星期一</th>
+                        <th>星期二</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                        <th>星期五</th>
+        
                     </tr>
-
+        
                     <tr>
-
-                        <td>修改</td>
-
-                        <td>10345</td>
-                        <td>國貿系</td>
-                        <td>國際貿易學</td>
-                        <td>3</td>
-                        <td>32</td>
-                        <td>120</td>
-                        <td>可填選</td>
-                       
+        
+                        <td style="font-family: 'Syne Mono', monospace;">8:10-9:00</td>
+        
+                        <td><span style="color: rgb(43, 255, 0)">數學</span></td>
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
+                        <td><span style="color: darkgoldenrod;">自然</span></td>
+                        <td><span style="color: rgb(255, 0, 34)">社會</span></td>
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+        
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10477</td>
-                        <td>國貿系</td>
-                        <td>經濟學</td>
-                        <td>3</td>
-                        <td>33</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">9:10-10:00</td>
+        
+                        <td><span style="color: rgb(43, 255, 0)">數學</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: dimgrey;">音樂</span></td>
+                        <td><span style="color: rgb(255, 0, 34)">社會</span></td>
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
+                    </tr>
+        
+                    <tr>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">10:10-11:00</td>
+        
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+                        <td><span style="color: rgb(255, 0, 34)">社會</span></td>
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10831</td>
-                        <td>企管系</td>
-                        <td>統計學</td>
-                        <td>3</td>
-                        <td>70</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">11:10:12:00</td>
+        
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
+                        <td><span style="color: dimgrey;">音樂</span></td>
+                        <td><span style="color: dimgrey;">音樂</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10239</td>
-                        <td>財金系</td>
-                        <td>貨幣銀行學</td>
-                        <td>3</td>
-                        <td>101</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td>12:00-13:00 </td>
+                        <td class="abc" colspan="5">午休</td>
+        
+                    </tr>
+                    <tr class="teacher">
+        
+                        <td style="font-family: 'Syne Mono', monospace;color: darkmagenta;">13:10-14:00</td>
+        
+                        <td>導師時間</td>
+                        <td>導師時間</td>
+                        <td>導師時間</td>
+                        <td>導師時間</td>
+                        <td>導師時間</td>
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10967</td>
-                        <td>財金系</td>
-                        <td>國際金融</td>
-                        <td>3</td>
-                        <td>45</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">14:10-15:00</td>
+        
+                        <td><span style="color: darkgoldenrod;">自然</span></td>
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+                        <td><span style="color: darkgoldenrod;">自然</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: rgb(255, 0, 34)">社會</span></td>
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10845</td>
-                        <td>行銷系</td>
-                        <td>行銷學</td>
-                        <td>3</td>
-                        <td>77</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">15:10-16:00</td>
+        
+                        <td><span style="color: darkgoldenrod;">自然</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
                     </tr>
                     <tr>
-
-                        
-                        <td>修改</td>
-
-                        <td>10777</td>
-                        <td>資管系</td>
-                        <td>演算法</td>
-                        <td>3</td>
-                        <td>27</td>
-                        <td>120</td>
-                        <td>可填選</td>
+        
+                        <td style="font-family: 'Syne Mono', monospace;">16:10-17:00</td>
+        
+                        <td><span style="color: rgb(93, 0, 255)">國文</span></td>
+                        <td><span style="color: rgb(10, 106, 41)">體育</span></td>
+                        <td><span style="color: darkgoldenrod;">自然</span></td>
+                        <td><span style="color: rgb(255, 0, 34)">社會</span></td>
+                        <td><span style="color: deeppink;">美術</span></td>
                     </tr>
-
+        
                     <thead>
-
+        
             </table>
         </aside>
     </div>
@@ -221,6 +254,7 @@
  <p>連絡電話: 04232794418  &nbsp;     聯絡信箱:fefde5466@gmail.ccm  &nbsp;    聯絡我們</p>
     </footer>
 
+    
 </body>
 
 </html>
