@@ -20,31 +20,42 @@
         }
 
         * {
-            border: 1px black;
+            border: 1px black solid;
         }
 
         div {
             display: block;
+           
 
         }
 
         header {
             background-color: darkorange;
-
-
         }
-        div {
-            display: block;
-        }
-        .b{
-            border: 0px red solid;
+       
+        .a{
+            border: 1px red solid;
             display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
-
 
         main {
             background-color: white;
 
+        }
+
+        .b{
+            border: 1px black solid;
+            display: block;
+            text-align: center;
+        }
+       
+        .container{
+            border: 1px black solid;
+            display: block;
+            text-align: center;
+            flex-wrap: wrap;
         }
 
         footer {
@@ -65,11 +76,30 @@
     <main>
 
         <div class="b">
-            <div>text1</div>
-            <div>text2</div>
-            <div>text3</div>
+            <div>商品分類</div>
+            <div>所有商品</div>
+            <div>暢銷商品</div>
+            <div>本日精選</div>
+            <div>新品上日</div>
         </div>
           
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif" ><br>蛋糕 加入購物車<br>NT＄ 150</div>
+
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg" ><br>蛋糕 加入購物車<br>NT＄ 300</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg" ><br>蛋糕 加入購物車<br>NT＄ 666</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg" ><br>蛋糕 加入購物車<br>NT＄ 85</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif" ><br>蛋糕 加入購物車<br>NT＄ 999</div>
+          
+              <div class="w-100 d-none d-md-block"></div>
+
+
+             
+            </div>
+          </div>
+       
+
     </main>
 
 
