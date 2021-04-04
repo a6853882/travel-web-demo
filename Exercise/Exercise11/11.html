@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+            
+        }
+        
+        * {
+            border: 3px black solid;
+        }
+
+        header {
+            background-color: darkorange;
+        }
+
+        div.a {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+           
+        }
+
+        main {
+            display: flex;
+            background-color: darkred;
+            flex-grow: 2;
+            text-align: right;
+            font-size: 1rem;
+            border: 1px black solid;
+            flex-direction: column;
+        }
+
+        aside {
+            background-color: deeppink;
+            flex-grow: 3;
+        }
+
+        footer {
+            background-color: dimgrey;
+        }
+        p{
+            display: inline;   
+        }
+    </style>
+</head>
+
+<body>
+    <header>header</header>
+    <div class="a">
+        <main>
+            <p>商品分類</p>
+            <p>所有商品</p>
+            <p>暢銷商品</p>
+            <p>本日精選</p>
+            <p>新品上日</p>
+        </main>
+        <aside>
+            
+        <div class="container">
+            <div class="row">
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg" >NT＄ 150</div>
+
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg" >NT＄ 300</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg" >NT＄ 666</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg" >NT＄ 85</div>
+              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif" >NT＄ 999</div>
+          
+              <div class="w-100 d-none d-md-block"></div>
+
+
+             
+            </div>
+          </div>
+        </aside>
+            
+    </div>
+    <footer>footer</footer>
+
+</body>
+
+</html>
