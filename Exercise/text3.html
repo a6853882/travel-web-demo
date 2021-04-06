@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+<style>
+  const mySelect = document.getElementById('mySelect');
+const resultA = document.getElementById('resultA');
+const resultB = document.getElementById('resultB');
+mySelect.addEventListener('change', (e) => {
+  switch (e.target.value) {
+    case 'A': {
+      resultA.style.display = 'block';
+      resultB.style.display = 'none';
+      break;
+    }
+    case 'B': {
+      resultA.style.display = 'none';
+      resultB.style.display = 'block';
+      break;
+    }
+    default: {
+      resultA.style.display = 'none';
+      resultB.style.display = 'none';
+      break;
+    }  
+  }
+});
+
+
+a:link {
+    color: red;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: hotpink;
+}
+a:active {
+    color: blue;
+}
+
+
+</style>
+    </head>
+
+<body>
+    
+  <div class = "row mt-3">
+    <div class = "col-sm-2 offset-sm-4">
+      <select class = "form-control" id = "mySelect">
+        <option value = "">---</option>
+        <option value = "A">A</option>
+        <option value = "B">B</option>
+        <option value = "C">C</option>
+      </select>
+    </div>
+    <div class = "col-sm-2">
+      <select class = "form-control" id = "resultA">
+        <option value = "">---</option>
+        <option value = "1">1</option>
+        <option value = "2">2</option>
+        <option value = "3">3</option>
+      </select>
+      <input type = "text" class = "form-control" id = "resultB">
+    </div>
+  </div>
+
+  <body>
+    <a href="#">超連結</a>
+  </body>
+</body>
+
+</html>
