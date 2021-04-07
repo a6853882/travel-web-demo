@@ -17,7 +17,7 @@
 
         }
 
-        * {}
+       
 
         header {
             background-color: darkorange;
@@ -58,10 +58,16 @@
             display: flex;
             background-color: white;
             flex-grow: 3;
-            flex-direction: column;
+            flex-direction: row;
         }
 
-        .b {}
+        .col-6 {
+              font-size: 1rem;
+              border: solid black 1px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+        }
 
         footer {
             background-color: dimgrey;
@@ -103,17 +109,22 @@
         </main>
         <aside>
 
-            <div class="container">  設成一個一個表格
-                <div class="b>
-              <div class=" col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif"><br>蛋糕 加入購物車<br>NT＄ 150</div>
+           
+                <div class="b">
+                    <div class=" col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif"><br>蛋糕 加入購物車<br>NT＄ 150
+                    </div>
 
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"><br>蛋糕 加入購物車<br>NT＄ 300</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg"><br>蛋糕 加入購物車<br>NT＄ 666</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg"><br>蛋糕 加入購物車<br>NT＄ 85</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif"><br>蛋糕 加入購物車<br>NT＄ 999</div>
+                    <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"><br>蛋糕 加入購物車<br>NT＄ 300
+                    </div>
+                    <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg"><br>蛋糕 加入購物車<br>NT＄ 666
+                    </div>
+                    <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg"><br>蛋糕 加入購物車<br>NT＄ 85
+                    </div>
+                    <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif"><br>蛋糕 加入購物車<br>NT＄ 999
+                    </div>
 
-                <div class="w-100 d-none d-md-block"></div>
-
+                    <div class="w-100 d-none d-md-block"></div>
+                </div>
             </div>
     </div>
     </aside>
