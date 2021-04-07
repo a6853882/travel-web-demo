@@ -14,77 +14,110 @@
             min-height: 100vh;
             margin: 0;
             font-size: 3rem;
-            
+
         }
-        
-        * {
-            border: 3px black solid;
-        }
+
+        * {}
 
         header {
             background-color: darkorange;
         }
 
-        div.a {
+        .aaa {
+            border: 1px rgb(132, 42, 201) solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .a {
             display: flex;
             flex-grow: 1;
             flex-direction: row;
-           
+
         }
 
         main {
             display: flex;
-            background-color: darkred;
+            background-color: white;
             flex-grow: 2;
-            text-align: right;
+            text-align: center;
             font-size: 1rem;
-            border: 1px black solid;
-            flex-direction: column;
+            flex-direction: row-reverse;
+
+        }
+
+        table {
+            border: solid black 1px;
+            text-align: right;
+            justify-content: right;
+
         }
 
         aside {
-            background-color: deeppink;
+            display: flex;
+            background-color: white;
             flex-grow: 3;
+            flex-direction: column;
         }
+
+        .b {}
 
         footer {
             background-color: dimgrey;
         }
-        p{
-            display: inline;   
+
+        p {
+            display: inline;
         }
     </style>
 </head>
 
 <body>
-    <header>header</header>
+    <header>
+        <div class="aaa">
+            <div>MyShop</div>
+            <div>商品 購物車</div>
+        </div>
+
+    </header>
     <div class="a">
         <main>
-            <p>商品分類</p>
-            <p>所有商品</p>
-            <p>暢銷商品</p>
-            <p>本日精選</p>
-            <p>新品上日</p>
+            <table border="1">
+                <tr>
+                    <th>商品分類</th>
+                </tr>
+                <tr>
+                    <td>所有商品</td>
+                </tr>
+                <tr>
+                    <td>暢銷商品</td>
+                </tr>
+                <tr>
+                    <td>本日精選</td>
+                </tr>
+                <tr>
+                    <td>新品上市</td>
+                </tr>
+            </table>
         </main>
         <aside>
-            
-        <div class="container">
-            <div class="row">
-              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg" >NT＄ 150</div>
 
-              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg" >NT＄ 300</div>
-              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg" >NT＄ 666</div>
-              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg" >NT＄ 85</div>
-              <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif" >NT＄ 999</div>
-          
-              <div class="w-100 d-none d-md-block"></div>
+            <div class="container">  設成一個一個表格
+                <div class="b>
+              <div class=" col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif"><br>蛋糕 加入購物車<br>NT＄ 150</div>
 
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"><br>蛋糕 加入購物車<br>NT＄ 300</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg"><br>蛋糕 加入購物車<br>NT＄ 666</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg"><br>蛋糕 加入購物車<br>NT＄ 85</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif"><br>蛋糕 加入購物車<br>NT＄ 999</div>
 
-             
+                <div class="w-100 d-none d-md-block"></div>
+
             </div>
-          </div>
-        </aside>
-            
+    </div>
+    </aside>
+
     </div>
     <footer>footer</footer>
 
