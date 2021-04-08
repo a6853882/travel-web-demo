@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+
+</head>
+
+<body>
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = 5 + 6;
+    </script>
+
+
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <script>
+        document.write(5 + 6);
+    </script>
+
+
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <script>
+        window.alert(5 + 6);
+    </script>
+
+    <h1>My First Web Page</h1>
+    <p>My First Paragraph</p>
+
+    <script>
+        console.log(5 + 6);
+    </script>
+
+    <script>
+        /*
+        14565465464645645
+        */
+    </script>
+
+    <script>
+        let length = 16;                               // 數字
+        let lastName = "Johnson";                      // 字串
+        let x = { firstName: "John", lastName: "Doe" };    // 物件
+        let cars = ["Saab", "Volvo", "BMW"];           // 陣列（也屬於物件）
+
+    </script>
+    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+
+    <p id="demo"></p>
+
+    <button onclick="this.innerHTML = Date()">The time is?</button>
+
+
+    <button onclick="triggerAlert(this);" data-name="Mike">click me</button>
+
+    <script>
+        function triggerAlert(ele) {
+            alert('Hey ' + ele.getAttribute('data-name'));
+        }
+    </script>
+
+    <script>
+        function myAlert1() {
+            alert('Hey!');
+        }
+
+        function myAlert2() {
+            alert('Hello!');
+        }
+
+        // 當使用者用滑鼠點擊頁面時，執行 myAlert1 函數
+        document.addEventListener('click', myAlert1);
+
+        // 當使用者用滑鼠點擊頁面時，執行 myAlert2 函數
+        document.addEventListener('click', myAlert2);
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.2.1/decimal.min.js"
+        integrity="sha512-wgpDL499xiOG58wZV570SA98gzalMPfRsetJijSB4s2UwY5xlgaiE6YrV9KOI80+hJB2HTFl1o4vYdXhTl0T5g=="
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

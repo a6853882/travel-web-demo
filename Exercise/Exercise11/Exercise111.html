@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <style>
+        body {
+            display: grid;
+            flex-direction: row;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 2rem;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 1fr auto;
+
+        }
+
+        * {
+            border: 5px rgb(177, 24, 62) solid;
+        }
+
+        div {
+            display: block;
+
+
+        }
+
+        header {
+            background-color: darkorange;
+        }
+
+        .c {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+        }
+
+        .a {
+            border: 1px rgb(132, 42, 201) solid;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        main {
+            background-color: rgb(127, 86, 86);
+            width: 500px;
+
+        }
+
+        .b {
+            border: 3px rgb(167, 213, 28) solid;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .container {
+            border: 1px black solid;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background-color: gray;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="a">
+            <div>MyShop</div>
+            <div>商品 購物車</div>
+        </div>
+    </header>
+
+    <div class="c">
+        <main>
+
+            <div class="b">
+                <div>商品分類</div>
+                <div>所有商品</div>
+                <div>暢銷商品</div>
+                <div>本日精選</div>
+                <div>新品上日</div>
+            </div>
+
+        </div>
+    </main>
+    <aside>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif"><br>蛋糕 加入購物車<br>NT＄ 150</div>
+
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"><br>蛋糕 加入購物車<br>NT＄ 300</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg"><br>蛋糕 加入購物車<br>NT＄ 666</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg"><br>蛋糕 加入購物車<br>NT＄ 85</div>
+                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif"><br>蛋糕 加入購物車<br>NT＄ 999</div>
+
+                <div class="w-100 d-none d-md-block"></div>
+
+
+
+            </div>
+    </aside>
+    </div>
+
+
+
+
+
+
+    <footer>
+        <div>@2021 MyShop All rights reserved</div>
+    </footer>
+
+</body>
+
+</html>

@@ -9,65 +9,101 @@
     <link rel="stylesheet" href="path/to/style.css" />
     <style>
         body {
-            display: grid;
-            flex-direction: row;
+            display: flex;
+            flex-direction: column;
             min-height: 100vh;
             margin: 0;
             font-size: 2rem;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto 1fr auto;
-
-        }
-
-        * {
-            border: 5px rgb(177, 24, 62) solid;
-        }
-
-        div {
-            display: block;
-
 
         }
 
         header {
+            display: flex;
             background-color: darkorange;
-        }
-
-        .c {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: column;
-        }
-
-        .a {
-            border: 1px rgb(132, 42, 201) solid;
-            display: flex;
             flex-direction: row;
             justify-content: space-between;
+            height: 100px;
+        }
+
+        * {
+            border: solid black 0px;
+        }
+
+        div.a {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+     
+
         }
 
         main {
-            background-color: rgb(127, 86, 86);
+            display: flex;
+            background-color: white;
+            flex-grow: 1;
+            border: black 0px solid;
+            flex-direction: column;
+            justify-content:first right;
+            gap: 20px;
+            
+
+       
 
         }
 
         .b {
-            border: 3px rgb(167, 213, 28) solid;
             display: flex;
-            flex-direction: column;
-            text-align: center;
+            flex-direction: column;          
+            text-align: right;
+            
         }
 
-        .container {
-            border: 1px black solid;
+            
+        .d{
+           border: solid black 1px;
+           text-align: right;
+           width: 150px;
+           align-self:flex-end
+        }
+
+
+        aside {
             display: flex;
             flex-direction: column;
-            text-align: center;
+            background-color: white;
+            border: black 0px solid;
             flex-wrap: wrap;
+            flex-grow: 2;
+            width: 100px;
+            text-align: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+        .c{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 20px;
+          
+        }
+        .t{
+            border: black 1px solid;
+        }
+        .o{
+            display: flex;
+            font-size: 10px;
+            justify-content: space-around;
+           
+        }
+        article {
+            background-color: white;
+            flex-grow: 1;
         }
 
         footer {
-            background-color: gray;
+            background-color: dimgrey;
+            height: 50px;
+            font-size: 5px;
             text-align: center;
         }
     </style>
@@ -75,51 +111,39 @@
 
 <body>
     <header>
-        <div class="a">
-            <div>MyShop</div>
-            <div>商品 購物車</div>
-        </div>
+        <p>MyShop</p>
+        <P style="color: blue;">商品 購物車</P>
     </header>
-
-    <div class="c">
+    <div class="a">
         <main>
-
-            <div class="b">
-                <div>商品分類</div>
-                <div>所有商品</div>
-                <div>暢銷商品</div>
-                <div>本日精選</div>
-                <div>新品上日</div>
+            <div class="b"  style="right: 5px;">
+                <div class="d">商品分類</div>
+                <div class="d" style="color: blue;">所有商品</div>
+                <div class="d" style="color: blue;">暢銷商品</div>
+                <div class="d" style="color: blue;">本日精選</div>
+                <div class="d" style="color: blue;">新品上日</div>
             </div>
+        </main>
+        <aside>
 
-        </div>
-    </main>
-    <aside>
+            <div class="c">
+                <div class="t"><img src="https://i.imgur.com/ZMpETy0b.gif" width="200" height="200"><br><span class="o"><p>蛋糕</p>  <p>加入購物車</p></span><br>NT＄ 150
+                </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ZMpETy0b.gif"><br>蛋糕 加入購物車<br>NT＄ 150</div>
-
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"><br>蛋糕 加入購物車<br>NT＄ 300</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/qT3MWAbb.jpg"><br>蛋糕 加入購物車<br>NT＄ 666</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/2G16qPab.jpg"><br>蛋糕 加入購物車<br>NT＄ 85</div>
-                <div class="col-6 col-sm-4"><img src="https://i.imgur.com/fziT4jzb.gif"><br>蛋糕 加入購物車<br>NT＄ 999</div>
-
-                <div class="w-100 d-none d-md-block"></div>
-
-
-
+                <div class="t"><img src="https://i.imgur.com/ODZ7Zpzb.jpg"  width="200" height="200"><br><span class="o"><p>滿滿的點心</p> <p>加入購物車</p></span><br>NT＄ 300
+                </div>
+                <div class="t"><img src="https://i.imgur.com/qT3MWAbb.jpg"  width="200" height="200"><br><span class="o"><p>蛋糕</p><p>加入購物車</p> </span><br>NT＄ 666
+                </div>
+                <div class="t" ><img src="https://i.imgur.com/2G16qPab.jpg"  width="200" height="200"><br><span class="o"><p>紅色的</p><p>加入購物車</p> </span><br>NT＄ 85
+                </div>
+                <div  class="t"><img src="https://i.imgur.com/fziT4jzb.gif"  width="200" height="200"><br><span class="o"><p>魔術方塊?</p><p>加入購物車</p> </span><br>NT＄ 999
+                </div>
             </div>
-    </aside>
+        </aside>
+        <article></article>
     </div>
-
-
-
-
-
-
     <footer>
-        <div>@2021 MyShop All rights reserved</div>
+        <p class="r" >@2021 MyShop All rights reserved</p>
     </footer>
 
 </body>
