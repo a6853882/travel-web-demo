@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <style>
+        body{
+            font-size: 2rem;
+        }
+    
+        * {
+         border: black 1px solid;
+        }
+
+        .a { 
+            display: grid;
+            grid-template-columns: repeat(6, 245px);
+            grid-template-rows: repeat(6,120px);
+           text-align: center;
+           line-height: 120px;
+           gap: 6px;
+        }
+        .b{
+            grid-column-start: 1;
+            grid-column-end: 6;
+            text-align: left;
+            background-color:darkorange;
+        
+        }
+        .c{
+            text-align: right;
+            background-color: darkorange;
+           
+        }
+        .d{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column: 2;
+            background-color: darkorchid;
+            font-size: 2px;
+        }
+   .e{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column: 3;
+            background-color: rgb(111, 169, 204);
+            font-size: 2px;
+        }
+        .f{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column: 4;
+            background-color: rgb(148, 223, 43);
+            font-size: 2px;
+        }
+        .g{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column: 5;
+            background-color: rgb(117, 50, 95);
+            font-size: 2px;       
+        }
+        .h{
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column: 3;
+            background-color: rgb(91, 18, 34);
+            font-size: 2px;  
+        }
+        .i{
+            grid-row-start: 4;
+            grid-row-end: 6;
+            grid-column: 4;
+            background-color: rgb(209, 174, 32);
+            font-size: 2px;  
+        }
+        .j{
+            grid-column-start: 1;
+            grid-column-end: 7;
+            background-color: gray;
+            font-size: 5px;
+            text-align: center;
+        }
+          
+           
+    </style>
+</head>
+<body>
+    <div class="a">
+        <div class="b">MyShop</div>
+        <div class="c">商品 購物車</div>
+
+        <div>211</div>
+        <div class="d">
+            <p>商品分類 所有商品 暢銷商品 </p>
+            <p>本日精選 新品上市</p>
+        </div>
+        <div class="e"><img src="https://i.imgur.com/ZMpETy0b.gif" width="240" height="120">蛋糕加入購物車>NT＄ 150</div>
+        <div class="f">111</div>
+        <div class="g">111</div>
+        <div>111</div>
+
+        <div>311</div>
+        <div>111</div>
+
+        <div>411</div>
+        <div>111</div>
+        <div class="h">111</div>
+        <div class="i">111</div>
+        <div>111</div>
+        <div>111</div>
+
+        <div>511</div>
+        <div>111</div>
+        <div>111</div>
+        <div>111</div>
+        
+
+        <div class="j">@2021 MyShop All rights reserved</div>
+        
+
+    </div>
+</body>
+</html>
