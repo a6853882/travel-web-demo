@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,173 +8,239 @@
     <title>Document</title>
     <link rel="stylesheet" href="path/to/style.css" />
     <style>
-        body{
+        body {
             font-size: 1rem;
         }
-    
+
         * {
-         border: black 1px solid;
+            border: black 0px solid;
         }
 
-        .a { 
+        .a {
             display: grid;
-            grid-template-columns:300px  100px  250px 250px  250px 350px ;
+            grid-template-columns: 300px 100px 250px 250px 250px 350px;
             grid-template-rows: repeat(13, 50px);
-           text-align: center;
-           gap: 4px;
+            text-align: center;
+            gap: 4px;
         }
-        .g{
-          
-           background-color: orange;
+
+        .g {
+
+            background-color: #ff7f50;
+            text-align: left;
+            color: white;
+        }
+
+        .h {
+            display: grid;
+            grid-template-columns: 600px 900px;
+            grid-template-rows: 50px;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .i {
+            text-align: right;
+            background-color: #ff7f50;
+            color: blue;
+        }
+
+        .shop {
+            border: black 1px solid;
+            background-color: #f4a460;
+            gap: 0px;
+            
+        }
+
+        .cake {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .b {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column: 3;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
+        }
+
+        .c {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column: 4;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
+        }
+
+        .d {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column: 5;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
+        }
+
+        .e {
+            grid-row-start: 6;
+            grid-row-end: 11;
+            grid-column: 3;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
+        }
+
+        .f {
+            grid-row-start: 6;
+            grid-row-end: 11;
+            grid-column: 4;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
+        }
+        .r{
            grid-column-start: 1;
            grid-column-end: 7;
-
-        }
-        .b{
-            grid-row-start: 2;
-            grid-row-end: 7;
-            grid-column: 3;
-            background-color: rgb(148, 223, 43);
+           grid-row: 13;
+       color: white;
+            background-color: gray;
             font-size: 2px;
         }
-          .c{
-            grid-row-start: 2;
-            grid-row-end: 7;
-            grid-column: 4;
-            background-color: rgb(45, 51, 165);
-            font-size: 2px;
-        }
-        .d{
-            grid-row-start: 2;
-            grid-row-end: 7;
-            grid-column: 5;
-            background-color: rgb(73, 52, 21);
-            font-size: 2px;
-        }
-        .e{
-            grid-row-start: 7;
-            grid-row-end: 12;
-            grid-column: 3;
-            background-color: rgb(187, 85, 94);
-            font-size: 2px;
-        }
-          .f{
-            grid-row-start: 7;
-            grid-row-end: 12;
-            grid-column: 4;
-            background-color: rgb(187, 85, 94);
-            font-size: 2px;
-          }
-           
     </style>
 </head>
+
 <body>
-    <div class="a">  
-       <div class="g">
-        <div style="text-align: left;">MyShop</div>   
-        <div style="text-align: right;">商品 購物車</div>
-       </div>
-      
-      
-      
-    
-       
-       <div>2</div>
-       <div>商品分類</div>
-       <div class="b">2222
-           <p>465654</p>
-           <p>65465465</p>
-       </div>
-       <div class="c">2</div>
-       <div class="d">2</div>
-       <div>2</div>
+    <div class="h">
+        <div class="g">MyShop </div>
+        <div class="i">商品 購物車</div>
 
-       <div>3</div>
-       <div>所有商品</div>
-       
-       
-       
-       <div>3</div>
+    </div>
+    <div class="a">
 
-       <div>4</div>
-       <div>暢銷商品</div>
-      
-      
-      
-       <div>4</div>
 
-       <div>5</div>
-       <div>本日精選</div>
-     
-      
-      
-       <div>5</div>
+
+
+
+
+
+
+        <div></div>
+        <div class="shop">商品分類</div>
+        <div class="b"><img src="https://i.imgur.com/ZMpETy0b.gif" width="240" height="200">
+            <div class="cake">蛋糕<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT$150</div>
+        </div>
+        <div class="c">
+            <img src="https://i.imgur.com/ODZ7Zpzb.jpg" width="240" height="200">
+            <div class="cake">滿滿的點心<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 300</div>
+        </div>
+        <div class="d">
+            <img src="https://i.imgur.com/qT3MWAbb.jpg" width="240" height="200">
+            <div class="cake">蛋糕<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 666</div>
+        </div>
+       
+        <div></div>
+        <div></div>
+        <div class="shop">所有商品</div>
+
+
+
+        <div></div>
+        <div></div>
+        <div class="shop">暢銷商品</div>
+
+
+
+        <div></div>
+        <div></div>
+        <div class="shop">本日精選</div>
+
+
+
+        <div></div>
+        <div></div>
+        <div class="shop">新品上市</div>
+
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="e">
+            <img src="https://i.imgur.com/2G16qPab.jpg" width="240" height="200">
+            <div class="cake">紅色的<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 85</div>
+        </div>
+        <div class="f">
+            <img src="https://i.imgur.com/fziT4jzb.gif" width="240" height="200">
+            <div class="cake">魔術方塊?<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 999</div>
+        </div>
+       
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div class="r">
+            @2021 MyShop All rights reserved
+        </div>
         
-       <div>6</div>
-       <div>新品上市</div>
-      
-       
-       <div>6</div>
 
-       <div>7</div>
-       <div>7</div>
-       <div class="e">11</div>
-       <div class="f">7</div>
-       <div>7</div>
-       <div>7</div>
 
-       <div>8</div>
-       <div>8</div>
-     
-       
-       <div>8</div>
-       <div>8</div>
 
-       <div>9</div>
-       <div>1</div>
-       
-      
-       <div>1</div>
-       <div>1</div>
-       
-       <div>10</div>
-       <div>2</div>
-      
-      
-       <div>2</div>
-       <div>2</div>
-
-       <div>11</div>
-       <div>3</div>
-      
-       
-       <div>3</div>
-       <div>3</div>
-
-       <div>12</div>
-       <div>4</div>
-       <div>4</div>
-       <div>4</div>
-       <div>4</div>
-       <div>4</div>
-
-       <div>13</div>
-       <div>5</div>
-       <div>5</div>
-       <div>5</div>
-       <div>5</div>
-       <div>5</div>
-        
-       <div>14</div>
-       <div>6</div>
-       <div>6</div>
-       <div>6</div>
-       <div>6</div>
-       <div>6</div>
-        
-
-    
 
     </div>
 </body>
+
 </html>
