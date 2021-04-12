@@ -7,89 +7,155 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="path/to/style.css" />
+    <style>
+        #panel,
+        #flip {
+            padding: 5px;
+            text-align: center;
+            border: solid 1px #c3c3c3;
+        }
+
+        #panel {
+            padding: 50px;
+            display: none;
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1>My First Web Page</h1>
-    <p>My First Paragraph</p>
 
-    <p id="demo"></p>
-    <script>
-        document.getElementById("demo").innerHTML = 5 + 6;
-    </script>
+    <h1>Welcome to My Web Page</h1>
 
-
-    <h1>My First Web Page</h1>
-    <p>My First Paragraph</p>
-
-    <script>
-        document.write(5 + 6);
-    </script>
-
-
-    <h1>My First Web Page</h1>
-    <p>My First Paragraph</p>
-
-    <script>
-        window.alert(5 + 6);
-    </script>
-
-    <h1>My First Web Page</h1>
-    <p>My First Paragraph</p>
-
-    <script>
-        console.log(5 + 6);
-    </script>
-
-    <script>
-        /*
-        14565465464645645
-        */
-    </script>
-
-    <script>
-        let length = 16;                               // 數字
-        let lastName = "Johnson";                      // 字串
-        let x = { firstName: "John", lastName: "Doe" };    // 物件
-        let cars = ["Saab", "Volvo", "BMW"];           // 陣列（也屬於物件）
-
-    </script>
-    <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
-
-    <p id="demo"></p>
-
-    <button onclick="this.innerHTML = Date()">The time is?</button>
+    <table border="1">
+        <tr>
+            <th>Company</th>
+            <th>Country</th>
+        </tr>
+        <tr>
+            <td>Alfreds Futterkiste</td>
+            <td>Germany</td>
+        </tr>
+        <tr>
+            <td>Berglunds snabbköp</td>
+            <td>Sweden</td>
+        </tr>
+        <tr>
+            <td>Centro comercial Moctezuma</td>
+            <td>Mexico</td>
+        </tr>
+        <tr>
+            <td>Ernst Handel</td>
+            <td>Austria</td>
+        </tr>
+        <tr>
+            <td>Island Trading</td>
+            <td>UK</td>
+        </tr>
+    </table>
 
 
-    <button onclick="triggerAlert(this);" data-name="Mike">click me</button>
-
-    <script>
-        function triggerAlert(ele) {
-            alert('Hey ' + ele.getAttribute('data-name'));
-        }
-    </script>
-
-    <script>
-        function myAlert1() {
-            alert('Hey!');
-        }
-
-        function myAlert2() {
-            alert('Hello!');
-        }
-
-        // 當使用者用滑鼠點擊頁面時，執行 myAlert1 函數
-        document.addEventListener('click', myAlert1);
-
-        // 當使用者用滑鼠點擊頁面時，執行 myAlert2 函數
-        document.addEventListener('click', myAlert2);
-    </script>
 
 
+
+    <p>List 1:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <p>List 2:</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Milk</li>
+        <li>Tea</li>
+    </ul>
+
+    <button>Click me</button>
+
+
+
+    <div id="flip">Click to slide the panel down or up</div>
+    <div id="panel">Hello world!!!</div>
+
+
+    <button id="btn1">text()</button>
+    <button id="btn2">html()</button>
+
+    <p>輸入：<input type="text" id="test" value="文字"></p>
+    <button>val()</button>
+
+    <p><a href="https://www.facebook.com/" id="link">Facebook</a></p>
+
+    <button>顯示 href</button>
+
+
+
+    <p id="test1">一個段落</p>
+<p id="test2">另一個段落</p>
+<p>輸入框：<input type="text" id="test3" value="一些文字"></p>
+
+<button>設定</button>
+
+
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/decimal.js/10.2.1/decimal.min.js"
         integrity="sha512-wgpDL499xiOG58wZV570SA98gzalMPfRsetJijSB4s2UwY5xlgaiE6YrV9KOI80+hJB2HTFl1o4vYdXhTl0T5g=="
         crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("tr:even").css("background-color", "yellow");
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("button").mouseenter(function () {
+                $("ul li:first-child").hide();
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+        });
+    </script>
+    <script>
+        $("#btn1").click(function () {
+            alert("Text: " + $("#test").text());
+        });
+        $("#btn2").click(function () {
+            alert("HTML: " + $("#test").html());
+        });
+
+    </script>
+
+    <script>
+        $("button").click(function () {
+            alert("Value: " + $("#test").val());
+        });
+
+    </script>
+
+    <script>
+        $("button").click(function () {
+            alert($("#link").attr("href"));
+        });
+
+    </script>
+
+    <script>
+        $("button").click(function () {
+    $("#test1").text("Hello world!");
+    $("#test2").html("<b>Hello world!</b>");
+    $("#test3").val("Hello world!");
+});
+
+    </script>
 </body>
 
 </html>
