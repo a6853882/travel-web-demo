@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,146 +8,260 @@
     <title>Document</title>
     <link rel="stylesheet" href="path/to/style.css" />
     <style>
-        body{
-            font-size: 2rem;
-        }
-    
-        * {
-         border: black 1px solid;
+        body {
+            font-size: 1rem;
         }
 
-        .a { 
+        * {
+            border: black 0px solid;
+        }
+
+        .a {
             display: grid;
-            grid-template-columns: repeat(6, 245px);
-            grid-template-rows: repeat(6,120px);
-           text-align: center;
-           line-height: 120px;
-           gap: 15px;
+            grid-template-columns: 300px 100px 250px 250px 250px 350px;
+            grid-template-rows: 52px 52px 52px 52px 52px 52px 0px   52px 52px 52px 52px 52px 52px 52px ;
+            text-align: center;
+           row-gap: 0px;
+          column-gap: 20px;
+           
         }
-        .b{
-            grid-column-start: 1;
-            grid-column-end: 6;
+
+        .g {
+
+            background-color: #ff7f50;
             text-align: left;
-            background-color:darkorange;
-          
+            color: white;
         }
-        .c{
+
+        .h {
+            display: grid;
+            grid-template-columns: 600px 900px;
+            grid-template-rows: 50px;
+           text-align: justify;
+            font-size: 2rem;
+            
+            
+        }
+
+        .i {
             text-align: right;
-            background-color: darkorange;
-         
+            background-color: #ff7f50;
+            color: blue;
+        }
+
+        .shopss {
+            border: gray 2px solid;
+            background-color: #f4a460;
+            row-gap: 0px;
+        }
+
+        .shop {
+            border: gray 2px dashed;
+            background-color: #f4a460;
+       ;
+
+        }
+
+        .cake {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .b {
+            grid-row-start: 1;
+            grid-row-end: 6;
+            grid-column: 3;
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
         
+
         }
-        .d{
-            grid-row-start: 2;
-            grid-row-end: 4;
-            grid-column: 2;
-            background-color: darkorchid ;
-            font-size: 2px;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            grid-template-rows: 1fr;
-        }
-   .e{
-            grid-row-start: 2;
-            grid-row-end: 4;
-            grid-column: 3;
-            background-color: rgb(111, 169, 204);
-            font-size: 2px;
-        }
-        .f{
-            grid-row-start: 2;
-            grid-row-end: 4;
+
+        .c {
+            grid-row-start: 1;
+            grid-row-end: 6;
             grid-column: 4;
-            background-color: rgb(148, 223, 43);
+            background-color: white;
             font-size: 2px;
+            border: black 1px solid;
+ 
         }
-        .g{
-            grid-row-start: 2;
-            grid-row-end: 4;
+
+        .d {
+            grid-row-start: 1;
+            grid-row-end: 6;
             grid-column: 5;
-            background-color: rgb(117, 50, 95);
-            font-size: 2px;       
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
         }
-        .h{
-            grid-row-start: 4;
-            grid-row-end: 6;
+
+        .e {
+            grid-row-start: 8;
+            grid-row-end: 13;
             grid-column: 3;
-            background-color: rgb(91, 18, 34);
-            font-size: 2px;  
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
         }
-        .i{
-            grid-row-start: 4;
-            grid-row-end: 6;
+
+        .f {
+            grid-row-start: 8;
+            grid-row-end: 13;
             grid-column: 4;
-            background-color: rgb(209, 174, 32);
-            font-size: 2px;  
+            background-color: white;
+            font-size: 2px;
+            border: black 1px solid;
+
         }
-        .j{
+
+        .r {
             grid-column-start: 1;
             grid-column-end: 7;
+            grid-row: 14;
+            color: white;
             background-color: gray;
-            font-size: 5px;
-            text-align: center;
+            font-size: 2px;
         }
-          
-           
+       
     </style>
 </head>
+
 <body>
+    <div class="h">
+        <div class="g">MyShop </div>
+        <div class="i">商品 購物車</div>
+
+    </div>
     <div class="a">
-        <div class="b">MyShop</div>
-        <div class="c">商品 購物車</div>
 
-        <div>211</div>
-        <div class="d">
-            <p>商品分類</p>
-            <p>所有商品</p>
-            <p>暢銷商品</p>
-            <p>本日精選</p>
-            <p></p>
+
+
+
+
+
+
+
+        <div></div>
+        <div class="shopss">商品分類</div>
+        <div class="b"><img src="https://i.imgur.com/ZMpETy0b.gif" width="240" height="180">
+            <div class="cake">蛋糕<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT$150</div>
         </div>
-        <div class="e"><img src="https://i.imgur.com/ZMpETy0b.gif" width="240" height="150">蛋糕加入購物車>NT＄ 150</div>
-        <div class="f">111</div>
-        <div class="g">111</div>
-        <div>111</div>
+        <div class="c">
+            <img src="https://i.imgur.com/ODZ7Zpzb.jpg" width="240" height="180">
+            <div class="cake">滿滿的點心<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 300</div>
+        </div>
+        <div class="d">
+            <img src="https://i.imgur.com/qT3MWAbb.jpg" width="240" height="180">
+            <div class="cake">蛋糕<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 666</div>
+        </div>
 
-        <div>311</div>
-        <div>111</div>
+        <div></div>
+        <div></div>
+        <div class="shop">所有商品</div>
 
-        <div>411</div>
-        <div>111</div>
-        <div class="h">111</div>
-        <div class="i">111</div>
-        <div>111</div>
-        <div>111</div>
 
-        <div>511</div>
-        <div>111</div>
-        <div>111</div>
-        <div>111</div>
+
+        <div></div>
+        <div></div>
+        <div class="shop">暢銷商品</div>
+
+
+
+        <div></div>
+        <div></div>
+        <div class="shop">本日精選</div>
+
+
+
+        <div></div>
+        <div></div>
+        <div class="shop">新品上市</div>
+
         
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
-        <div class="j">@2021 MyShop All rights reserved</div>
+        <div></div>
+        <div></div>
+        <div></div>
         
+        <div class="e">
+            <img src="https://i.imgur.com/2G16qPab.jpg" width="240" height="180">
+            <div class="cake">紅色的<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 85</div>
+        </div>
+        <div class="f">
+            <img src="https://i.imgur.com/fziT4jzb.gif" width="240" height="180">
+            <div class="cake">魔術方塊?<button>購物車</button></div>
+            <div style="font-size: 2rem;">NT＄ 999</div>
+        </div>
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+
+
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+        <div class="r">
+            @2021 MyShop All rights reserved
+        </div>
+
+
+
+
 
     </div>
 </body>
-
-<img src="https://i.imgur.com/ODZ7Zpzb.jpg" width="240" height="180">
-<div class="cake">滿滿的點心<button>購物車</button></div>
-<div style="font-size: 2rem;">NT＄ 300
-
-
-<img src="https://i.imgur.com/qT3MWAbb.jpg" width="240" height="180">
-<div class="cake">蛋糕<button>購物車</button></div>
-<div style="font-size: 2rem;">NT＄ 666
-
-    <img src="https://i.imgur.com/2G16qPab.jpg" width="240" height="180">
-    <div class="cake">紅色的<button>購物車</button></div>
-    <div style="font-size: 2rem;">NT＄ 85</div>
-
-        <img src="https://i.imgur.com/fziT4jzb.gif" width="240" height="180">
-            <div class="cake">魔術方塊?<button>購物車</button></div>
-            <div style="font-size: 2rem;">NT＄ 999</div>
-
 
 </html>
