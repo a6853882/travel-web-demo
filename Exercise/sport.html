@@ -16,7 +16,38 @@
         crossorigin="anonymous" />
 
     <style>
-        body {}
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header {
+            background-color: darkorange;
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+
+        main {
+            background-color: gray;
+
+        }
+
+        figcaption {
+            background-color: deeppink;
+
+        }
+
+        footer {
+            background-color: dimgrey;
+        }
 
         .top {
             background-color: black;
@@ -31,82 +62,109 @@
             border: black 1px solid;
             color: blue;
         }
-
-       figure{
-           display: flex;
-           justify-content: center;
-          
-
-       }
     </style>
 </head>
 
 <body>
-    <div class="top">
-        <!----第一段----->
-        <div class="d-flex bd-highlight">
-            <div class="p-2 flex-grow-1 bd-highlight">Ashi旅遊專覽</div>
-            <div class="p-2 bd-highlight">EN/中</div>
-            <div class="p-2 bd-highlight">登入</div>
-            <div class="p-2 bd-highlight">註冊</div>
-            <div class="p-2 bd-highlight"><i class="fas fa-grip-lines"></i></div>
-        </div>
-    </div>
-    <div class="second">
-        <!----第二段----->
-        <div>日本</div>
-        <div>韓國</div>
-        <div>土耳其</div>
-        <div>大陸</div>
-        <div>澳門</div>
-        <div>香港</div>
-        <div>新加坡</div>
-        <div>泰國</div>
-        <div>國內</div>
-    </div>
-
-
     <header>
-        <!---開頭主頁圖片-->
+        <div class="top">
+            <!----第一段----->
+            <div class="d-flex bd-highlight">
+                <div class="p-2 flex-grow-1 bd-highlight">Ashi旅遊專覽</div>
+                <div class="p-2 bd-highlight">EN/中</div>
+                <div class="p-2 bd-highlight">登入</div>
+                <div class="p-2 bd-highlight">註冊</div>
+                <div class="p-2 bd-highlight"><i class="fas fa-grip-lines"></i></div>
+            </div>
+        </div>
+        <div class="second">
+            <!----第二段----->
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 日本
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#">大阪</a>
+                  <a class="dropdown-item" href="#">東京</a>
+                </div>
+              </div>
+            <div>韓國</div>
+            <div>土耳其</div>
+            <div>大陸</div>
+            <div>澳門</div>
+            <div>香港</div>
+            <div>新加坡</div>
+            <div>泰國</div>
+            <div>國內</div>
+        </div>
+    </header>
 
-        <figure>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
 
-                <div class="carousel-inner" >
-                    <div class="carousel-item active">
-                        <img src="https://www.citibank.com.tw/sim/blog/uploads/images/cms/ckeditor/661187bdf0a4940688f3162ea0f659a9.jpg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
+    <!---開頭主頁圖片-->
+
+    <figure>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://www.citibank.com.tw/sim/blog/uploads/images/cms/ckeditor/661187bdf0a4940688f3162ea0f659a9.jpg"
+                        width="1000" height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://alina00.com/wp-content/uploads/IMG_0124.jpg" width="1000" height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.funtime.com.tw/blog/wp-content/uploads/2017/09/128.jpg" width="1000"
+                        height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://res.klook.com/image/upload/Countries/iqexfnuq2veqkd7ynytp.jpg" width="1000"
+                        height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.xn--fhqr87bwm4a.tw/RES/Images/9d2f3e79-34c1-4c39-9b69-11332c466615.jpg"
+                        width="1000" height="600" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://doqvf81n9htmm.cloudfront.net/data/heidilin_146/0Country/Asia/1140_shutterstock_610935047.jpg"
+                        width="1000" height="600" alt="...">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            </div>
-        </figure>
-    </header>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        </div>
+    </figure>
+
+    <figcaption>
+        <!----搜尋及優惠行程----->
+        <div class="input">
+            出發城市: <input type=”text” value="請輸入關鍵字"> 旅遊形式: <input type=”text” value="請輸入關鍵字" > <br>旅遊地區: <input type=”text” value="請輸入關鍵字"/>
+            <button style="background-color: pink;">
+                <i class="fas fa-search"></i>
+                搜尋</button>
+
+               
+    </figcaption>
     <main>
-
+        <!--主要行程--->
+        123
     </main>
-    <figcaption></figcaption>
-    <footer>
 
+    <footer>
+        <!--粉絲團 電話聯絡...--->
+        113
     </footer>
 
 
