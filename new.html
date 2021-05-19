@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+            font-family: cursive;
+        }
+
+        header {
+            background-color: black;
+        }
+
+        .p {
+            color: rgba(162, 250, 0, 0.986);
+            text-shadow: rgb(3 252 86 / 14%) 0 -1px 4px, rgb(0 0 0 / 88%) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255 208 0) 0 -18px 40px;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        .first {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            font-display: 1fr, 3fr, 1hr;
+
+        }
+
+        aside {
+            background-color: white;
+            flex-grow: 1;
+            width: 50px;
+        }
+
+        main {
+            background-color: white;
+            flex-grow: 3;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100px;
+            text-align: center;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .a {
+            display: grid;
+            grid-template-columns: repeat(5, 170px);
+            grid-template-rows: repeat(6, 100px);
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .b {
+            grid-row: 1;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .c{
+            font-size: 1rem;
+            grid-row: 2;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .d{
+            font-size: 1rem;
+            grid-row: 3;
+            grid-column-start: 2;
+            grid-column-end: 5;
+        }
+        .e{
+            font-size: 1rem;
+            grid-row: 4;
+            grid-column-start: 2;
+            grid-column-end: 5;  
+        }
+        .f{
+            font-size: 1rem;
+            grid-row: 5;
+            grid-column-start: 2;
+            grid-column-end: 5;  
+        }
+        .g{
+            font-size: 1rem;
+            grid-row: 6;
+            grid-column-start: 2;
+            grid-column-end: 5;  
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="p">
+            <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
+        </div>
+    </header>
+    <figure>
+        <div>最新消息</div>
+        <hr>
+    </figure>
+    <div class="first">
+        <aside>
+
+        </aside>
+        <main>
+            <div class="a">
+                <div>地區</div>
+                <div class="b">標題</div>
+                <div>時間</div>
+                <div style="font-size: 2rem;">澎湖</div>
+                <div class="c"><a href="https://tw.yahoo.com/">2021 年澎湖花火節時程表出來啦！將在4月22至6月28日盛大登場</a></div>
+                <div style="font-size: 1rem;">2021-03-17</div>
+                <div style="font-size: 2rem;">台東</div>
+                <div class="d"><a href="https://tw.yahoo.com/">2021「台灣國際熱氣球嘉年華」將於7/3在台東鹿野高台登場</a></div>
+                <div style="font-size: 1rem;">2021-04-19</div>
+                <div style="font-size: 2rem;">台北</div>
+                <div class="e"><a href="https://tw.yahoo.com/">美食饗宴將於2021/4/30-5/3台北世貿一館盛大登場。共有六種特色主題</a></div>
+                <div style="font-size: 1rem;">2021-01-12</div>
+                <div style="font-size: 2rem;">苗栗</div>
+                <div class="f"><a href="https://tw.yahoo.com/">2021客家桐花祭來了，每到4、5月油桐花期4月18日至5月30日</a></div>
+                <div style="font-size: 1rem;">2021-01-28</div>
+                <div style="font-size: 2rem;">宜蘭</div>
+                <div class="g"><a href="https://tw.yahoo.com/"> 2021宜蘭綠色博覽會3/27開跑！7大亮點整理</a></div>
+                <div style="font-size: 1rem;">2021-02-09</div>
+            </div>
+        </main>
+        <aside>
+        </aside>
+    </div>
+
+</body>
+
+</html>
