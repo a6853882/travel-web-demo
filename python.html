@@ -190,7 +190,7 @@
                         original_text = "python"<br>
                         encode_text = ''.join(([encode_dict[i] for i in original_text]))<br>
                         print(f" original text: {original_text} \nencode_text: {encode_text}")<br>
-                        ############
+                    
                         encode_dict.values()<br>
 
                         decode_dict = dict(zip(encode_dict.values(), encode_dict.keys()))<br>
@@ -198,57 +198,6 @@
                         print(f" encode_text: {encode_text} \nencode_text: {decode_text}")
                     </p>
                     <p><img src="image\Exercise 6.3.jpg"> </p>
-                    <!-----未完成!!!----------->
-                    <p>013-Classes</p>
-                    <p> Practice 01 22頁</p>
-                    <p>Design a class called ‘Account’
-                        Define class attributes include of:
-                        bank name
-                        bank code
-                        Define class methods:
-                        Get bank name
-                        Get bank code
-                        Define instance attributes and need to initialize them:
-                        user name
-                        balance
-                        Define instance methods:
-                        Get balance
-                        Save money
-                        Withdraw Money
-                        Create 2 objects to test.</p>
-                    <p>class Account(object):
-                        bank = 'MARK'
-                        code = '822'
-
-                        def __init__(self, name, money):
-                        super(Account, self).__init__()
-
-                        self.name = name
-                        self.balance = 0
-                        self.save_mpney(money)#到這
-
-                        @classmethod
-                        def get_bank(cls):
-                        return(cls.bank)
-
-                        @classmethod
-                        def get_code(cls):
-                        return(cls.code)
-
-                        def get_balance(self):
-                        print(f'{self.name} 的目前餘額: {self.balance}')
-                        return self.balance
-
-                        def save_money(self, money):
-                        if money < 0 : print("請勿輸入負數") else: self.balance +=money print(f'已輸入 {money} 元 ') 
-                    def withdraw_money(self, money):
-                      if self.balance  - money < 0 :
-                         print(' 餘額不足') else: self.balance -=money print(f'已提領 {money} 元 ')  
-                x = Account(' Zuo', 1000) y=Account('Mu', 500) if x.get_code()==y.get_code(): print(f'{x.name} 與
-                            {y.name} 是相同銀行: {x.get_bank()} {x.get_code()}') x.get_balance() y.get_balance()
-                            x.save_money(-100) y.save_money(1000) x.withdraw_money(5000) y.withdraw_money(1000)</p>
-                            <p><img src=""> </p>
-
 </body>
 
 </html>
