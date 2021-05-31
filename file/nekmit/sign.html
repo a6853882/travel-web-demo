@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="path/to/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-size: 3rem;
+            font-family: cursive;
+        }
+
+        aside {
+            background-color: white;
+            flex-grow: 1;
+            width: 50px;
+        }
+
+
+        header {
+            background-color: black;
+        }
+
+        .a {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row;
+            font-display: 1fr, 3fr, 1hr;
+
+        }
+
+        .p {
+            color: rgba(162, 250, 0, 0.986);
+            text-shadow: rgb(3 252 86 / 14%) 0 -1px 4px, rgb(0 0 0 / 88%) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255 208 0) 0 -18px 40px;
+        }
+
+        main {
+            flex-grow: 4;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100px;
+            text-align: left;
+            justify-content: space-around;
+            font-size: 1.5rem;
+        }
+
+        #heading {
+            border-style: solid;
+            border-width: 5px;
+            border-color: rgb(75, 154, 203);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="p">
+            <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
+        </div>
+    </header>
+    <div class="a">
+        <aside></aside>
+        <main>
+
+            <div class="container" id="heading">
+                <p class="title">輸入會員資料</p>
+                <div class="row row-cols-4">
+                    <div class="col-4"> <label for="validationCustom01" class="form-label">姓名</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <p>4~24字元</p>
+
+                    </div>
+                    <div class="col-5"> <label for="validationCustom02" class="form-label">身分證</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <p>
+                            在台外國人士請填寫統一證號
+                        </p>
+                    </div>
+                </div>
+                <!-----------姓名、身分證-->
+                <div class="row row-cols-4">
+                    <div class="col-6">
+                        <label for="validationCustom02" class="form-label">出生日期</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="validationCustom04" class="form-label">性別</label><br>
+                        <input type="radio" name="Fruit" value="Apple"> 男
+                        <input type="radio" name="Fruit" value="Bananas"> 女
+                    </div>
+                </div>
+
+                <!-----------出生日期-->
+                <div class="row row-cols-4">
+                    <div class="col-2"> <label for="validationCustom01" class="form-label">城市</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-8"> <label for="validationCustom02" class="form-label">地址</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-----------城市、地址-->
+                <div class="row row-cols-4">
+                    <div class="col-4"> <label for="validationCustom01" class="form-label">連絡電話</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+
+                    </div>
+                    <div class="col-6">
+                        <label for="validationCustomUsername" class="form-label">信箱</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="validationCustomUsername"
+                                aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please choose a username.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-----------連絡電話、信箱-->
+                <div class="row row-cols-4">
+                    <div class="col-4">
+                        <label for="validationCustom02" class="form-label">會員帳號</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <p>4~24字元</p>
+                    </div>
+                </div>
+                <!-----------帳號-->
+
+                <div class="row row-cols-4">
+                    <div class="col-4">
+                        <label for="validationCustom02" class="form-label">會員密碼</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-----------密碼-->
+                <div class="row row-cols-4">
+                    <div class="col-4">
+                        <label for="validationCustom02" class="form-label">再次輸入密碼</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-----------密碼-->
+                <div class="row row-cols-4">
+                <div class="col-4">
+                    <label for="validationCustom02" class="form-label">會員同意合約</label>
+                    <textarea type="text" class="form-control"  style="width:400px;height:120px;" id="validationCustom02" value="111" >11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</textarea>
+                    <input class="rt-form-input" id="is_pp_register" name="is_pp_register" type="checkbox" checked="checked" value="" />
+                    <label for="is_pp_register">
+                      同意
+                    </label>
+                </div>
+                </div>
+
+                    <br>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">送出</button>
+                    </div>
+                </div>
+
+
+        </main>
+        <aside></aside>
+    </div>
+
+
+
+    <!-- JAVASCRIPTS -->
+    <script src="layout/scripts/jquery.min.js"></script>
+    <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
