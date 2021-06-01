@@ -90,7 +90,7 @@
                 <p class="title">輸入會員資料</p>
                 <div class="row row-cols-4">
                     <div class="col-4"> <label for="validationCustom01" class="form-label">姓名</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -98,7 +98,7 @@
 
                     </div>
                     <div class="col-5"> <label for="validationCustom02" class="form-label">身分證</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -111,7 +111,7 @@
                 <div class="row row-cols-4">
                     <div class="col-6">
                         <label for="date" class="form-label">出生日期</label>
-                        <input type="date" class="form-control" id="validationCustom02" value="" >
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
 
 
                     </div>
@@ -125,14 +125,19 @@
 
                 <!-----------出生日期-->
                 <div class="row row-cols-4">
-                    <div class="col-2"> <label for="validationCustom01" class="form-label">城市</label>
-                        <input type="text" class="form-control" id="validationCustom01" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                    <div class="col-3"> <label for="validationCustom01" class="form-label">城市</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList"
+                            placeholder="">
+                        <datalist id="datalistOptions">
+                            <option value="台北市">
+                            <option value="新北市">
+                            <option value="桃園市">
+                            <option value="台中市">
+                            <option value="台南市">
+                        </datalist>
                     </div>
                     <div class="col-8"> <label for="validationCustom02" class="form-label">地址</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -141,7 +146,7 @@
                 <!-----------城市、地址-->
                 <div class="row row-cols-4">
                     <div class="col-4"> <label for="validationCustom01" class="form-label">連絡電話</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="" required>
+                        <input class="form-control" type="text" placeholder="" aria-label="default input example">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
@@ -151,8 +156,7 @@
                         <label for="validationCustomUsername" class="form-label">信箱</label>
                         <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
-                            <input type="text" class="form-control" id="validationCustomUsername"
-                                aria-describedby="inputGroupPrepend" required>
+                            <input class="form-control" type="text" placeholder="" aria-label="default input example">
                             <div class="invalid-feedback">
                                 Please choose a username.
                             </div>
@@ -163,56 +167,72 @@
                 <div class="row row-cols-4">
                     <div class="col-4">
                         <label for="validationCustom02" class="form-label">會員帳號</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+                        <input class="form-control form-control-lg" type="text" placeholder="2~24個字元"
+                            aria-label=".form-control-lg example">
                         <div class="valid-feedback">
                             Looks good!
                         </div>
-                        <p>4~24字元</p>
                     </div>
                 </div>
                 <!-----------帳號-->
 
                 <div class="row row-cols-4">
                     <div class="col-4">
-                        <label for="validationCustom02" class="form-label">會員密碼</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                        <label for="inputPassword2" class="visually-hidden">會員密碼</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                    </div>
+                    <div class="col-2">
+                        <br>
+                        <button type="submit" class="btn btn-primary mb-3">確認身分</button>
+                    </div>
+                </div>
+
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                  </div>
+                <!-----------密碼-->
+                <div class="row row-cols-4">
+                    <div class="col-4">
+                        <label for="inputPassword2" class="visually-hidden">再次輸入密碼</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
                     </div>
                 </div>
                 <!-----------密碼-->
                 <div class="row row-cols-4">
                     <div class="col-4">
-                        <label for="validationCustom02" class="form-label">再次輸入密碼</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+                        <label for="validationCustom02" class="form-label">會員同意合約</label>
+                        <textarea type="text" class="form-control" style="width:400px;height:120px;"
+                            id="validationCustom02"
+                            value="111">11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</textarea>
+                        <input class="rt-form-input" id="is_pp_register" name="is_pp_register" type="checkbox"
+                            checked="checked" value="" />
+                        <label for="is_pp_register">
+                            同意
+                        </label>
                     </div>
                 </div>
-                <!-----------密碼-->
-                <div class="row row-cols-4">
-                <div class="col-4">
-                    <label for="validationCustom02" class="form-label">會員同意合約</label>
-                    <textarea type="text" class="form-control"  style="width:400px;height:120px;" id="validationCustom02" value="111" >11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111</textarea>
-                    <input class="rt-form-input" id="is_pp_register" name="is_pp_register" type="checkbox" checked="checked" value="" />
-                    <label for="is_pp_register">
-                      同意
+                <p>是否願意收到本站的最新資訊及優惠消息</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      是，願意
                     </label>
-                </div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      不願意
+                    </label>
+                  </div>
+                <div class="mb-3">
                     <br>
                     <div class="col-12">
                         <button class="btn btn-primary" type="submit">送出</button>
                     </div>
                 </div>
-
+            </div>
         </main>
         <aside></aside>
     </div>
