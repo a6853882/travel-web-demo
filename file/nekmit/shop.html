@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>cart</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 要把jquery-1.9.1.min.js導進去,不匯出不來 -->
+    <script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+    <script language="javascript">
+
+
+        $(function () {
+            var size = 3.0 * $('#image1').width();
+            $("#image1").mouseover(function (event) {
+                var $target = $(event.target);
+
+                if ($target.is('img')) {
+                    $("<img id='tip' src='" + $target.attr("src") + "'>").css({
+                        "height": size,
+                        "width": size,
+                    }).appendTo($("#imgtest"));/*將當前所有匹配元素追加到指定元素內部的末尾位置。*/
+                }
+            }).mouseout(function () {
+                $("#tip").remove();/*移除元素*/
+            })
+
+
+        })
+    </script>
+    <script type="text/javascript">
+        function total(id) {
+            /*計算單個的價格*/
+            var quantity = document.getElementById("quantity" + id).value;
+            var price = document.getElementById("price" + id).value;
+            var smallTotal = quantity * price;
+            var smallT = document.getElementById("smallTotal" + id);
+            smallT.innerHTML = smallTotal;
+
+
+            /*計算總價格*/
+            var totalPrice = 0;
+            for (var a = 1; a < 8; a++) {
+                var quantity = document.getElementById("quantity" + a).value;
+                var price = document.getElementById("price" + a).value;
+                var smallTotal = quantity * price;
+                totalPrice = totalPrice + smallTotal;
+            }
+            var total = document.getElementById("total");
+            total.innerHTML = totalPrice;
+        }
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+            var totalPrice = 0;
+            for (var a = 1; a < 8; a++) {
+                var quantity = document.getElementById("quantity" + a).value;
+                var price = document.getElementById("price" + a).value;
+                var smallTotal = quantity * price;
+                totalPrice = totalPrice + smallTotal;
+                /*alert(smallTotal);*/
+                var smallT = document.getElementById("smallTotal" + a);
+                smallT.innerHTML = smallTotal;
+            }
+            /*取出購物車的所有商品的價格總和*/
+            var total = document.getElementById("total");
+            total.innerHTML = totalPrice;
+        }
+    </script>
+
+    <style type="text/css">
+        #imgtest {
+            position: absolute;
+            top: 100px;
+            left: 400px;
+            z-index: 1;
+        }
+
+        table {
+            left: 100px;
+            font-size: 20px;
+        }
+        body {
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+          margin: 0;
+          font-size: 3rem;
+          font-family: cursive;
+      }
+
+      aside {
+          background-color: white;
+          flex-grow: 1;
+          width: 50px;
+      }
+
+
+      header {
+          background-color: black;
+      }
+
+      .a {
+          display: flex;
+          flex-grow: 1;
+          flex-direction: row;
+          font-display: 5fr, 1fr, 5hr;
+
+      }
+
+      .p {
+          color: rgba(162, 250, 0, 0.986);
+          text-shadow: rgb(3 252 86 / 14%) 0 -1px 4px, rgb(0 0 0 / 88%) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255 208 0) 0 -18px 40px;
+      }
+
+      main {
+          flex-grow: 4;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 100px;
+          text-align: left;
+          justify-content: space-around;
+          font-size: 1.5rem;
+      }
+
+      #heading {
+          border-style: solid;
+          border-width: 5px;
+          border-color: rgb(75, 154, 203);
+      }
+
+      .title {
+          text-align: center;
+          font-size: 2rem;
+      }
+      h1{
+        text-align: center;
+        color: blue;
+      }
+    </style>
+</head>
+
+<body onload="initialize()">
+  <header>
+    <div class="p">
+        <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
+    </div>
+</header>
+<div class="a">
+    <aside></aside>
+    <main>
+      <h1>優惠專區</h1>
+    <div id="imgtest"></div>
+    <table border="1" style="text-align: center;" align="center">
+        <thead style="height: 50">
+
+            <td style="WIDTH: 300px" >
+                商品名稱
+            </td>
+            <td style="WIDTH: 60px">
+                圖片
+            </td>
+
+            <td style="WIDTH: 80px">
+                數量
+            </td>
+            <td style="WIDTH: 100px">
+                價格
+            </td>
+            <td style="WIDTH: 100px">
+                小計
+            </td>
+            <td style="WIDTH: 250px">
+             產品內容
+          </td>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td class="name">夏都沙灘酒店(海景房8折)</td>
+                <td class="image">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.-vH4FzzXEZjKmydv5_yoSAHaFj&pid=Api&P=0&w=223&h=168" width="100px" height="100px" id="image1" />
+                </td>
+                <td class="quantity">
+                    <input id="quantity1" value="0" onblur="total(1);" />
+                    <div class="count">
+                    </div>
+                </td>
+                <td class="price">
+                    <input type="hidden" id="price1" value="20" />
+                    優惠:2000
+                    <p>原:500</p>
+                </td>
+                <td class="total">
+                    <span id="smallTotal1"> 元
+                </td>
+                <td>
+                  <div></div>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td class="name">台東知本溫泉二日遊</td>
+                <td class="image">
+                    <img src="https://content.shopback.com/tw/wp-content/uploads/2017/02/77779999999999.jpg" width="100px" height="100px" id="image1" />
+                </td>
+                <td class="quantity">
+                    <input id="quantity2" value="1" onblur="total(2);" />
+                </td>
+                <td class="price">
+                    <input type="hidden" id="price2" value="30" />
+                    30
+                </td>
+                <td class="total">
+                    <span id="smallTotal2"> 元
+                </td>
+                <td>
+                  <div></div>
+                </td>
+            </tr>
+            <tr>
+                <td class="name">澎湖吉貝島水上活動三合一</td>
+                <td class="image">
+                    <img src="https://s3.amazonaws.com/haplay/tpwtcc9mytvs8nanzttf.jpg" width="100px" height="100px" id="image1" />
+                </td>
+                <td class="quantity">
+                    <input id="quantity3" value="1" onblur="total(3);" />
+                </td>
+                <td class="price">
+                    <input type="hidden" id="price3" value="30" />
+                    30
+                </td>
+                <td class="total">
+                    <span id="smallTotal3"> 元
+                </td>
+                <td>
+                  <div></div>
+                </td>
+            </tr>
+            <tr>
+              <td class="name">六福村優惠券</td>
+              <td class="image">
+                  <img src="https://tse2.mm.bing.net/th?id=OIP.-ZTuXHUsM8j9Gf0Nx_-lkQHaHa&pid=Api&P=0&w=300&h=300" width="100px" height="100px" id="image1" />
+              </td>
+              <td class="quantity">
+                  <input id="quantity4" value="1" onblur="total(4);" />
+              </td>
+              <td class="price">
+                  <input type="hidden" id="price4" value="30" />
+                  30
+              </td>
+              <td class="total">
+                  <span id="smallTotal4"> 元
+              </td>
+              <td>
+                <div></div>
+              </td>
+          </tr>
+          <tr>
+            <td class="name">宜蘭三天兩夜自由行</td>
+            <td class="image">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.zSDN3zsAsinj3RFMPha7mgHaE6&pid=Api&P=0&w=233&h=156" width="100px" height="100px" id="image1" />
+            </td>
+            <td class="quantity">
+                <input id="quantity5" value="1" onblur="total(5);" />
+            </td>
+            <td class="price">
+                <input type="hidden" id="price5" value="30" />
+                30
+            </td>
+            <td class="total">
+                <span id="smallTotal5"> 元
+            </td>
+            <td>
+              <div></div>
+            </td>
+        </tr>
+        <tr>
+          <td class="name">Xpark水族館優惠券</td>
+          <td class="image">
+              <img src="https://beauty-upgrade.tw/wp-content/uploads/2020/05/%EF%BC%B8park.jpg" width="100px" height="100px" id="image1" />
+          </td>
+          <td class="quantity">
+              <input id="quantity6" value="1" onblur="total(6);" />
+          </td>
+          <td class="price">
+              <input type="hidden" id="price6" value="30" />
+              30
+          </td>
+          <td class="total">
+              <span id="smallTotal6"> 元
+          </td>
+          <td>
+            <div></div>
+          </td>
+      </tr>
+      <tr>
+        <td class="name">台南關子嶺泡湯券</td>
+        <td class="image">
+            <img src="https://travelimg.yam.com/ARTICLE/2017101709585479.jpg?r=true&c=true&w=600&h=315" width="100px" height="100px" id="image1" />
+        </td>
+        <td class="quantity">
+            <input id="quantity7" value="1" onblur="total(7);" />
+        </td>
+        <td class="price">
+            <input type="hidden" id="price7" value="30" />
+            30
+        </td>
+        <td class="total">
+            <span id="smallTotal7"> 元
+        </td>
+        <td>
+          <div></div>
+        </td>
+    </tr>
+            <tr>
+                <td colspan="5" class="cart_total">
+
+
+                </td>
+                <td>
+                    <span class="red">總計:<span id="total"> 元
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </main>
+    <aside></aside>
+</div>
+</body>
+
+</html>
