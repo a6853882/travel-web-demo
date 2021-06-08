@@ -5,9 +5,14 @@
   <meta charset="UTF-8">
   <title>商品</title>
   <style>
-    html,
     body {
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-size: 3rem;
+      font-family: cursive;
     }
 
     .row {
@@ -16,8 +21,8 @@
     }
 
     .col {
-      width: 200px;
-      height: 216px;
+      width: 300px;
+      height: 500px;
       margin: 0px 1px 0px 1px;
       padding-top: 2px;
       border: solid black 1px;
@@ -27,6 +32,57 @@
 
     .col img {
       width: 150px;
+    }
+
+    aside {
+      background-color: white;
+      flex-grow: 1;
+      width: 50px;
+    }
+
+
+    header {
+      background-color: black;
+    }
+
+    .a {
+      display: flex;
+      flex-grow: 1;
+      flex-direction: row;
+      font-display: 1fr, 5fr, 1hr;
+
+    }
+
+    .p {
+      color: rgba(162, 250, 0, 0.986);
+      text-shadow: rgb(3 252 86 / 14%) 0 -1px 4px, rgb(0 0 0 / 88%) 0 -2px 10px, #ff8000 0 -10px 20px, rgb(255 208 0) 0 -18px 40px;
+    }
+
+    main {
+      flex-grow: 4;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100px;
+      text-align: left;
+      justify-content: space-around;
+      font-size: 1.5rem;
+    }
+
+    #heading {
+      border-style: solid;
+      border-width: 5px;
+      border-color: rgb(75, 154, 203);
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: blue;
     }
   </style>
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -145,75 +201,81 @@
 </head>
 
 <body>
-  <!--這裡寫購物車程式碼-->
-  <div>
-    <table border="1" width="100%">
-      <thead>
-        <tr>
-          <th><input type="checkbox" onclick="check(this)"></th>
-          <th>圖片</th>
-          <th>名稱</th>
-          <th>價格</th>
-          <th>數量</th>
-          <th>移除</th>
-        </tr>
-      </thead>
-      <tbody id="tb">
-        <tr>
-          <th><input type="checkbox" onclick="calculate()"></th>
-          <td>商品1</td>
-          <td><img src="images/5a0cf6bfN92a5a597.jpg" width="100"></td>
-          <td>3000.00</td>
-          <td>
-            <input type="button" value="-" onclick="jian(this)">
-            <input type="number" value="1">
-            <input type="button" value="+" onclick="jia(this)">
-          </td>
-          <td><input type="button" value="移除" onclick="del(this)"></td>
-        </tr>
-        <tr>
-          <th><input type="checkbox" onclick="calculate()"></th>
-          <td>商品2</td>
-          <td><img src="images/5a0cf672N3c785b7a.jpg" width="100"></td>
-          <td>2000.00</td>
-          <td>
-            <input type="button" value="-" onclick="jian(this)">
-            <input type="number" value="1">
-            <input type="button" value="+" onclick="jia(this)">
-          </td>
-          <td><input type="button" value="移除" onclick="del(this)"></td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="6">總價<span id="total">0</span> 元</td>
-        </tr>
-      </tfoot>
-    </table>
-  </div>
+  <header>
+    <div class="p">
+      <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
+    </div>
+  </header>
+  <div class="a">
+    <aside></aside>
+    <main>
+      <h1>優惠專區</h1>
+      <!--這裡寫購物車程式碼-->
 
-  <!-- 商品列表 -->
-  <div class="row">
-    <div class="col">
-      <p><span>商品1</span>價格:<span>3000.00</span></p>
-      <img src="images/5a0cf6bfN92a5a597.jpg">
-      <input type="button" value="新增至購物車" onclick="add(this)">
-    </div>
-    <div class="col">
-      <p><span>商品2</span>價格:<span>2000.00</span></p>
-      <img src="images/5a0cf672N3c785b7a.jpg">
-      <input type="button" value="新增至購物車" onclick="add(this)">
-    </div>
-    <div class="col">
-      <p><span>商品3</span>價格:<span>4000.00</span></p>
-      <img src="images/5a1f5ed3Nfa577958.jpg">
-      <input type="button" value="新增至購物車" onclick="add(this)">
-    </div>
-    <div class="col">
-      <p><span>商品4</span>價格:<span>3500.00</span></p>
-      <img src="images/5a1f5664Nfa934fac.jpg">
-      <input type="button" value="新增至購物車" onclick="add(this)">
-    </div>
+      <table border="1" width="100%">
+        <thead>
+          <tr>
+            <th><input type="checkbox" onclick="check(this)"></th>
+            <th>名稱</th>
+            <th>圖片</th>
+            <th>價格</th>
+            <th>數量</th>
+            <th>移除</th>
+          </tr>
+        </thead>
+        <tbody id="tb">
+
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="6">總價<span id="total">0</span> 元</td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <!-- 商品列表 -->
+      <div class="row">
+        <div class="col">
+          <p><span style="font-size: 2rem;">夏都沙灘酒店</span><br><br>優惠價:<span>3000.00</span></p>
+          <p>原價:6000</p>
+          <img src="https://tse3.mm.bing.net/th?id=OIP.-vH4FzzXEZjKmydv5_yoSAHaFj&pid=Api&P=0&w=223&h=168"><br>
+          <input type="button" value="新增至購物車" onclick="add(this)">
+          <div style="text-align: left;">1.一泊四食<br>2.知本老爺飯店住宿<br>3.台鐵來回車票及飯店接駁車</div>
+        </div>
+        <div class="col">
+          <p><span>商品2</span>價格:<span>2000.00</span></p>
+          <img src="https://content.shopback.com/tw/wp-content/uploads/2017/02/77779999999999.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+        <div class="col">
+          <p><span>商品3</span>價格:<span>4000.00</span></p>
+          <img src="images/5a1f5ed3Nfa577958.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+        <div class="col">
+          <p><span>商品4</span>價格:<span>3500.00</span></p>
+          <img src="images/5a1f5664Nfa934fac.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+        <div class="col">
+          <p><span>商品5</span>價格:<span>3500.00</span></p>
+          <img src="images/5a1f5664Nfa934fac.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+        <div class="col">
+          <p><span>商品6</span>價格:<span>3500.00</span></p>
+          <img src="images/5a1f5664Nfa934fac.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+        <div class="col">
+          <p><span>商品7</span>價格:<span>3500.00</span></p>
+          <img src="images/5a1f5664Nfa934fac.jpg">
+          <input type="button" value="新增至購物車" onclick="add(this)">
+        </div>
+      </div>
+
+    </main>
+    <aside></aside>
   </div>
 </body>
 
