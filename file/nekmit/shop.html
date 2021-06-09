@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>商品</title>
+  <title>優惠專區</title>
   <style>
     body {
       margin: 0;
@@ -87,6 +87,7 @@
   </style>
   <script src="js/jquery-3.2.1.min.js"></script>
   <script>
+    //相對位子  console.log取代alert 直接顯示在網頁
     function calculate() {
       var tbody = document.getElementById("tb");
       var prices = tbody.querySelectorAll("td:nth-child(4)");
@@ -132,6 +133,7 @@
         calculate();
       }
     }
+    //到這裡 減少數量也要看
     // 改變複選框的選中狀態
     function check(me) {
       var tbody = document.getElementById("tb");
@@ -148,7 +150,7 @@
       var spans = div.getElementsByTagName("span"); // 獲得商品名字和價格的span
       var name = spans[0].innerText; // 獲得商品名字
 
-      var col_1 = tbody.querySelectorAll("td:nth-child(2)"); // nth-child 作為第幾個孩子
+      var col_1 = tbody.querySelectorAll("td:nth-child(2)"); // nth-child 作為第幾個
       var found = null; // found 變數代表購物車中找到的td
       for (var i = 0; i < col_1.length; i++) {
         if (col_1[i].innerText == name) {
