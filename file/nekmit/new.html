@@ -41,74 +41,8 @@
             text-align: center;
         }
 
-        .first {
-            display: flex;
-            flex-grow: 1;
-            flex-direction: row;
-            font-display: 1fr, 3fr, 1fr;
-
-        }
-
-        aside {
-            background-color: white;
-            flex-grow: 1;
-            width: 50px;
-        }
-
-        main {
-            background-color: white;
-            flex-grow: 3;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100px;
-            text-align: center;
-            justify-content: space-around;
-            gap: 20px;
-        }
-
-        .a {
-            display: grid;
-            grid-template-columns: repeat(5, 170px);
-            grid-template-rows: repeat(6, 100px);
-            text-align: center;
-            line-height: 100px;
-        }
-
-        .b {
-            grid-row: 1;
-            grid-column-start: 2;
-            grid-column-end: 5;
-        }
-        .c{
+        .size {
             font-size: 1rem;
-            grid-row: 2;
-            grid-column-start: 2;
-            grid-column-end: 5;
-        }
-        .d{
-            font-size: 1rem;
-            grid-row: 3;
-            grid-column-start: 2;
-            grid-column-end: 5;
-        }
-        .e{
-            font-size: 1rem;
-            grid-row: 4;
-            grid-column-start: 2;
-            grid-column-end: 5;  
-        }
-        .f{
-            font-size: 1rem;
-            grid-row: 5;
-            grid-column-start: 2;
-            grid-column-end: 5;  
-        }
-        .g{
-            font-size: 1rem;
-            grid-row: 6;
-            grid-column-start: 2;
-            grid-column-end: 5;  
         }
     </style>
 </head>
@@ -124,33 +58,50 @@
         <hr>
     </figure>
     <div class="first">
-        <aside>
 
-        </aside>
         <main>
-            <div class="a">
-                <div>地區</div>
-                <div class="b">標題</div>
-                <div>時間</div>
-                <div style="font-size: 2rem;">澎湖</div>
-                <div class="c"><a href="https://tw.yahoo.com/">2021 年澎湖花火節時程表出來啦！將在4月22至6月28日盛大登場</a></div>
-                <div style="font-size: 1rem;">2021-03-17</div>
-                <div style="font-size: 2rem;">台東</div>
-                <div class="d"><a href="https://tw.yahoo.com/">2021「台灣國際熱氣球嘉年華」將於7/3在台東鹿野高台登場</a></div>
-                <div style="font-size: 1rem;">2021-04-19</div>
-                <div style="font-size: 2rem;">台北</div>
-                <div class="e"><a href="https://tw.yahoo.com/">美食饗宴將於2021/4/30-5/3台北世貿一館盛大登場。共有六種特色主題</a></div>
-                <div style="font-size: 1rem;">2021-01-12</div>
-                <div style="font-size: 2rem;">苗栗</div>
-                <div class="f"><a href="https://tw.yahoo.com/">2021客家桐花祭來了，每到4、5月油桐花期4月18日至5月30日</a></div>
-                <div style="font-size: 1rem;">2021-01-28</div>
-                <div style="font-size: 2rem;">宜蘭</div>
-                <div class="g"><a href="https://tw.yahoo.com/"> 2021宜蘭綠色博覽會3/27開跑！7大亮點整理</a></div>
-                <div style="font-size: 1rem;">2021-02-09</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm">地區</div>
+                    <div class="col-6" style="text-align: center;">標題</div>
+                    <div class="col-sm">時間</div>
+                </div>
+                <div class=" size">
+                    <div class="row align-items-center">
+                        <div class="col-sm" style="font-size: 2rem;">澎湖</div>
+                        <div class="col-6"><a href="https://tw.yahoo.com/">2021 年澎湖花火節時程表出來啦！將在4月22至6月28日盛大登場</a></div>
+                        <div class="col-sm">2021-03-17</div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-sm" style="font-size: 2rem;">台東</div>
+                        <div class="col-6"><a href="https://tw.yahoo.com/">2021「台灣國際熱氣球嘉年華」將於7/3在台東鹿野高台登場</a></div>
+                        <div class="col-sm">2021-04-19</div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-sm" style="font-size: 2rem;">台北</div>
+                        <div class="col-6"><a href="https://tw.yahoo.com/">美食饗宴將於2021/4/30-5/3台北世貿一館盛大登場。共有六種特色主題</a>
+                        </div>
+                        <div class="col-sm">2021-01-12</div>
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-sm" style="font-size: 2rem;">苗栗</div>
+                        <div class="col-6"><a href="https://tw.yahoo.com/">2021客家桐花祭來了，每到4、5月油桐花期4月18日至5月30日</a></div>
+                        <div class="col-sm">2021-01-28</div>                       
+                    </div>
+                    <hr>
+                    <div class="row align-items-center">
+                        <div class="col-sm" style="font-size: 2rem;">宜蘭</div>
+                        <div class="col-6"><a href="https://tw.yahoo.com/"> 2021宜蘭綠色博覽會3/27開跑！7大亮點整理</a></div>
+                        <div class="col-sm">2021-02-09</div>
+                    </div>
+                    <hr>
+                </div>
             </div>
         </main>
-        <aside>
-        </aside>
+
     </div>
 
 </body>
