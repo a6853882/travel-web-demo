@@ -30,7 +30,10 @@ Licence URI: https://www.os-templates.com/template-terms
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" />
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     .font {
       color: rgba(162, 250, 0, 0.986);
@@ -67,10 +70,11 @@ Licence URI: https://www.os-templates.com/template-terms
       flex-direction: row;
       font-display: 1fr, 3fr, 1hr;
     }
+
     .carousel .carousel-item {
       height: 400px;
     }
-    
+
     .carousel .carousel-item img {
       min-height: 300px;
       max-height: 400px;
@@ -90,7 +94,6 @@ Licence URI: https://www.os-templates.com/template-terms
       width: 80%;
       float: left;
     }
-
   </style>
 </head>
 
@@ -198,7 +201,6 @@ Licence URI: https://www.os-templates.com/template-terms
   <div class="a">
     <aside></aside>
     <main>
-            
       <!---一般討論區-->
       <table class="table table-hover">
         <thead>
@@ -268,51 +270,81 @@ Licence URI: https://www.os-templates.com/template-terms
       <!------圖片0-->
       <div class="container">
         <div class="carousel slide" data-ride="carousel" id="carousel-demo">
-             <ol class="carousel-indicators">
-               <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
-               <li data-target="#carousel-demo" data-slide-to="1"></li>
-               <li data-target="#carousel-demo" data-slide-to="2"></li>
-               <li data-target="#carousel-demo" data-slide-to="3"></li>
-             </ol>
-           <div class="carousel-inner">
-             <div class="carousel-item active">
-               <img class="d-block w-100" src="images\蘭陽博物館.jpg" alt="">
-               <div class="carousel-caption d-none d-md-block">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-demo" data-slide-to="1"></li>
+            <li data-target="#carousel-demo" data-slide-to="2"></li>
+            <li data-target="#carousel-demo" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="images\蘭陽博物館.jpg" alt="">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>蘭陽博物館</h5>
                 <p> 蘭陽博物館是一座與大地共生的建築，完整保留濕地的自然生態</p>
               </div>
-             </div>
-             <div class="carousel-item">
-               <img class="d-block w-100" src="images\和平島公園.jpg" alt="">
-               <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images\和平島公園.jpg" alt="">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>和平島公園</h5>
                 <p>和平島公園有著秘境之稱，島上奇岩異石林立，海岸奇特的海蝕地形景觀</p>
               </div>
-             </div>
-             <div class="carousel-item">
-               <img class="d-block w-100" src="images\大溪吊橋.jpg" alt="">
-               <div class="carousel-caption d-none d-md-block">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="images\大溪吊橋.jpg" alt="">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>大溪吊橋</h5>
                 <p>橫跨大漢溪的巴洛克式唯美吊橋</p>
               </div>
-             </div>
-             <div class="carousel-item">
+            </div>
+            <div class="carousel-item">
               <img class="d-block w-100" src="images\十分瀑布.jpg" alt="">
               <div class="carousel-caption d-none d-md-block">
-               <h5>十分瀑布</h5>
-               <p>垂簾型瀑布，岩層傾向與水流方向相反，有台灣尼加拉瀑布的美稱</p>
-             </div>
+                <h5>十分瀑布</h5>
+                <p>垂簾型瀑布，岩層傾向與水流方向相反，有台灣尼加拉瀑布的美稱</p>
+              </div>
             </div>
-           
-             <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
-             <span class="carousel-control-prev-icon"></span>
-             </a>
-             <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
-               <span class="carousel-control-next-icon"></span>
-             </a>
-           </div>
-         </div>
-     </div>
+
+            <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card border-danger mb-3" style="max-width: 16rem;">
+          <div class="card-header">宜蘭超推薦餐廳<i class="fas fa-utensils"></i></div>
+          <div class="card-body">
+            <h4 class="card-title"><b><a href="">愛法餐廳</a></b></h4>
+            <p class="card-text">法式料理融入在地元素，醞釀而出別具特色的法式料理，特色餐點-法國人的薑母鴨</p>
+          </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 16rem;">
+          <div class="card-header">基隆超推薦餐廳<i class="fas fa-utensils"></i></div>
+          <div class="card-body">
+            <h4 class="card-title"><b> <a href="">阿根納原味餐廳</a></b></h4>
+            <p class="card-text">可以吃到原味的海鮮餐廳，包括食物的原味同時也包含了原住民的智慧與文化</p>
+          </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 16rem;">
+          <div class="card-header">桃園超推薦餐廳<i class="fas fa-utensils"></i></div>
+          <div class="card-body">
+            <h4 class="card-title"><b><a href="">村民食堂</a></b></h4>
+            <p class="card-text">村民食堂位在桃園藝文特區的港點百匯吃到飽餐廳。餐廳以簡潔俐落的風格，打造乾淨舒適且寬敞的用餐環境</p>
+          </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 16rem;">
+          <div class="card-header">新北超推薦餐廳<i class="fas fa-utensils"></i></div>
+          <div class="card-body">
+            <h4 class="card-title"><b><a href="">Asia 49 亞洲料理</b></a></h4>
+            <p class="card-text">琳瑯美食集亞洲特色之大成，涵蓋星、馬、泰、越南、韓國..等風味，室外的天幕花園更是美不勝收，天光月色</p>
+          </div>
+        </div>
+      </div>
     </main>
     <aside>
       <!------>
@@ -322,7 +354,7 @@ Licence URI: https://www.os-templates.com/template-terms
         </tr>
         <tr>
           <td> <input class="search-bar" type="text" name="search" id="search" placeholder="輸入名稱">
-            <button class="search-btn"> <i class="fas fa-search"></i></button></th>
+            <button type="button" class="btn btn-outline-primary  btn-sm"> <i class="fas fa-search"></i></button>
           </td>
         </tr>
       </table>
@@ -458,7 +490,7 @@ Licence URI: https://www.os-templates.com/template-terms
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
     integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
     crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
