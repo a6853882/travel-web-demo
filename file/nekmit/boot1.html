@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #train {
+      position: relative;/*位置*/
+      cursor: pointer; /*游標變手指頭*/
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;   /*時間間隔*/
+
+        train.style.left = timePassed / 6 + 'px'; /*時間流逝* 位置及時間*/
+
+        if (timePassed > 2000) clearInterval(timer); /*距離*/
+
+      }, 20); /*跳動的速度*/
+    }
+  </script>
+
+
+</body>
+
+</html>

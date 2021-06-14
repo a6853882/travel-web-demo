@@ -94,6 +94,21 @@ Licence URI: https://www.os-templates.com/template-terms
       width: 80%;
       float: left;
     }
+
+    .pic {
+      width: 500px;
+      height: 350px;
+      overflow: hidden;
+    }
+
+    .pic img {
+      transform: scale(1, 1);
+      transition: all 1s ease-out;
+    }
+
+    .pic img:hover {
+      transform: scale(1.2, 1.2);
+    }
   </style>
 </head>
 
@@ -365,7 +380,8 @@ Licence URI: https://www.os-templates.com/template-terms
           </td>
         </tr>
         <tr>
-          <td><img src="images\象山步道.jpg" width="200" height="100" alt="hint text">
+          <td>
+            <div class="pic"><img src="images\象山步道.jpg" width="200" height="100" alt="hint text"></div>
             <div><a href="newindex.html">台北人的爬山好去處~ 象山步道，每到假日總是吸引愛好踏青的人，前往觀看美麗的台北市風景</a></div>
           </td>
         </tr>
@@ -490,7 +506,9 @@ Licence URI: https://www.os-templates.com/template-terms
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
     integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+    integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

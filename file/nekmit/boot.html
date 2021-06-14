@@ -1,41 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <style>
-
-  </style>
+  <script src="https://js.cx/libs/animate.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+  #field {
+    height: 300px;
+    border-bottom: 3px black groove;
+    position: relative;
+  }
+  
+  #ball {
+    position: absolute;
+    cursor: pointer;
+  }
+</style>
 <body>
 
 
-  
-  <p class="text-start">Start aligned text on all viewport sizes.</p>
-  <p class="text-center">Center aligned text on all viewport sizes.</p>
-  <p class="text-end">End aligned text on all viewport sizes.</p>
-  
-  <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
-  <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
-  <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
-  <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+  <div id="field">
+    <img src="https://js.cx/clipart/ball.svg" width="40" height="40" id="ball">
+  </div>
 
-  <p class="text-muted">
-    Muted text with a <a href="#" class="text-reset">最新消息</a>
-  </p>
+  <script>
+    function makeEaseOut(timing) {
+      return function(timeFraction) {
+        return 1 - timing(1 - timeFraction);
+      }
+    }
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+    function bounce(timeFraction) {
+      for (let a = 0, b = 1, result; 1; a += b, b /= 2) {
+        if (timeFraction >= (7 - 4 * a) / 11) {
+          return -Math.pow((11 - 6 * a - 11 * timeFraction) / 4, 2) + Math.pow(b, 2)
+        }
+      }
+    }
+
+    function quad(timeFraction) {
+      return Math.pow(timeFraction, 2);
+    }
+
+    ball.onclick = function() {
+
+      let height = field.clientHeight - ball.clientHeight;
+      let width = 800;   /*距離*/
+
+      animate({
+        duration: 2000,  /*速度*/
+        timing: makeEaseOut(bounce),
+        draw: function(progress) {
+          ball.style.top = height * progress + 'px'
+        }
+      });
+
+      animate({
+        duration: 2000,
+        timing: makeEaseOut(quad),
+        draw: function(progress) {
+          ball.style.left = width * progress + "px"
+        }
+      });
+    }
+  </script>
+
+
 </body>
 
-</html>
+</html>>
