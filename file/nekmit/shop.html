@@ -42,7 +42,8 @@
 
 
     header {
-      background-color: black;
+      background-image: url(images/demo/backgrounds/night.jpg);
+      height: 675px;
     }
 
     .a {
@@ -83,6 +84,21 @@
     h1 {
       text-align: center;
       color: blue;
+    }
+
+    /*動圖*/
+    #train {
+      position: relative;
+      /*位置*/
+    }
+
+    #a {
+      position: relative;
+      /*位置*/
+    }
+    #b {
+      position: relative;
+      /*位置*/
     }
   </style>
   <script src="js/jquery-3.2.1.min.js"></script>
@@ -207,7 +223,57 @@
     <div class="p">
       <div class="font" style="font-size: 50px;">TWpapaGo 台灣走透透</div>
     </div>
+    <img id="train" style="margin: 100px 15px 28px 30px;" src="images\shop1.png">
+    <img id="a" style="margin: 200px 15px 28px 900px;" src="images\shop2.png">
+    <img id="b" style="margin: 100px 15px 28px 230px;" src="images\shop3.png">
+    <!---1.下 4.右-->
   </header>
+  <!--------------------------------->
+  <script>
+    train.onload = function () {
+      let start = Date.now();
+
+      let timer = setInterval(function () {
+        let timePassed = Date.now() - start;   /*時間間隔*/
+
+        train.style.left = timePassed / 6 + 'px'; /*時間流逝* 位置及時間*/
+
+        if (timePassed > 1200) clearInterval(timer); /*距離*/
+
+      }, 40); /*跳動的速度*/
+    }
+  </script>
+  <script>
+    a.onload = function () {
+      let start = Date.now();
+
+      let timer = setInterval(function () {
+        let timePassed = Date.now() - start;   /*時間間隔*/
+
+        a.style.right = timePassed / 6 + 'px'; /*時間流逝* 位置及時間*/
+
+        if (timePassed > 1200) clearInterval(timer); /*距離*/
+
+      }, 40); /*跳動的速度*/
+    }
+  </script>
+  <script>
+    b.onload = function () {
+      let start = Date.now();
+
+      let timer = setInterval(function () {
+        let timePassed = Date.now() - start;   /*時間間隔*/
+
+        b.style.bottom = timePassed / 6 + 'px'; /*時間流逝* 位置及時間*/
+
+        if (timePassed > 2700) clearInterval(timer); /*距離*/
+
+      }, 60); /*跳動的速度*/
+    }
+  </script>
+  <!-------------------->
+
+
   <div class="a">
     <aside></aside>
     <main>
@@ -240,7 +306,8 @@
         <div class="col">
           <p><span style="color: blue;">夏都沙灘酒店</span><br><br>優惠價:<span style="color: deeppink;">5600</span></p>
           <p>原價:7500</p>
-          <img src="https://tse3.mm.bing.net/th?id=OIP.-vH4FzzXEZjKmydv5_yoSAHaFj&pid=Api&P=0&w=223&h=168" width="100px" height="100px"><br>
+          <img src="https://tse3.mm.bing.net/th?id=OIP.-vH4FzzXEZjKmydv5_yoSAHaFj&pid=Api&P=0&w=223&h=168" width="100px"
+            height="100px"><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: center;">海景雙人房(平日券)</div>
@@ -248,7 +315,8 @@
         <div class="col">
           <p><span style="color: blue;">台東知本溫泉二日遊</span><br><br>優惠價:<span style="color: deeppink;">4990</span></p>
           <p>原價:5890</p>
-          <img src="https://content.shopback.com/tw/wp-content/uploads/2017/02/77779999999999.jpg" width="100px" height="100px"><br>
+          <img src="https://content.shopback.com/tw/wp-content/uploads/2017/02/77779999999999.jpg" width="100px"
+            height="100px"><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: left;">1.一泊四食<br>2.知本老爺飯店住宿<br>3.台鐵來回車票及飯店接駁車</div>
@@ -264,7 +332,8 @@
         <div class="col">
           <p><span style="color: blue;">六福村優惠券</span><br><br>優惠價:<span style="color: deeppink;">699</span></p>
           <p>原價:999</p>
-          <img src="https://tse2.mm.bing.net/th?id=OIP.-ZTuXHUsM8j9Gf0Nx_-lkQHaHa&pid=Api&P=0&w=300&h=300" width="100px" height="100px"  /><br>
+          <img src="https://tse2.mm.bing.net/th?id=OIP.-ZTuXHUsM8j9Gf0Nx_-lkQHaHa&pid=Api&P=0&w=300&h=300" width="100px"
+            height="100px" /><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: left;"> 六福村成人一日券，憑門票進入六福村主題遊樂園，四大園區(含動物園)可一票玩到底</div>
@@ -272,7 +341,8 @@
         <div class="col">
           <p><span style="color: blue;">宜蘭三天兩夜自由行</span><br><br>優惠價:<span style="color: deeppink;">9999</span></p>
           <p>原價:11500</p>
-          <img src="https://tse1.mm.bing.net/th?id=OIP.zSDN3zsAsinj3RFMPha7mgHaE6&pid=Api&P=0&w=233&h=156" width="100px" height="100px"><br>
+          <img src="https://tse1.mm.bing.net/th?id=OIP.zSDN3zsAsinj3RFMPha7mgHaE6&pid=Api&P=0&w=233&h=156" width="100px"
+            height="100px"><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: left;">1.二泊四食<br>2.力麗威斯汀度假酒店豪華四人房(兩人房另補差價)</div>
@@ -280,7 +350,9 @@
         <div class="col">
           <p><span style="color: blue;">Xpark水族館優惠券</span><br><br>優惠價:<span style="color: deeppink;">420</span></p>
           <p>原價:550</p>
-          <img src="https://beauty-upgrade.tw/wp-content/uploads/2020/05/%EF%BC%B8park.jpg" width="100px" height="100px"><br>
+          <img
+            src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2020/07/18/realtime/8212247.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600&w=800"
+            width="100px" height="100px"><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: center;">水族館成人一日券</div>
@@ -288,7 +360,8 @@
         <div class="col">
           <p><span style="color: blue;">台南關子嶺泡湯券</span><br><br>優惠價:<span style="color: deeppink;">1150</span></p>
           <p>原價:1400</p>
-          <img src="https://goto-travel.com/frontend/fl/1/images/Form_Hotel/hotel/542_3.jpg" width="100px" height="100px"><br>
+          <img src="https://goto-travel.com/frontend/fl/1/images/Form_Hotel/hotel/542_3.jpg" width="100px"
+            height="100px"><br>
           <input type="button" value="新增至購物車" onclick="add(this)">
           <div>內容:</div>
           <div style="text-align: left;">景大山莊豪華湯屋使用券(泡湯時間2小時，四人為限)</div>
