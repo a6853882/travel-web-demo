@@ -216,6 +216,14 @@
       }
     }
   </script>
+  <!---結帳確認框-->
+  <script>
+    function myFunction() {
+      var txt;
+      confirm("是否確定前往結帳!")
+      document.getElementById("demo").innerHTML = txt;
+    }
+    </script>
 </head>
 
 <body>
@@ -296,7 +304,8 @@
         </tbody>
         <tfoot>
           <tr>
-            <td colspan="6">總價<span id="total">0</span> 元</td>
+            <td colspan="6">總價<span id="total">0</span> 元 <button onclick="myFunction()">結帳</button></td>
+            
           </tr>
         </tfoot>
       </table>
