@@ -44,7 +44,14 @@ Licence URI: https://www.os-templates.com/template-terms
 .face{
   font-size: 2rem;
 }
-
+.mm{
+  animation:blink 1s infinite;
+}
+@keyframes blink{
+  0%{opacity: 0}
+  50%{opacity: 1}
+  100%{opacity: 0}
+}
 </style>
 </head>
 <body id="top">
@@ -155,7 +162,7 @@ Licence URI: https://www.os-templates.com/template-terms
         <div class="container"> 
           <!-- Trigger the modal with a button -->
           <button type="button" class="btn btn-info btn-lg"  data-toggle="modal"
-              data-target="#myModal">疫情宣導</button>
+              data-target="#myModal"><div class="mm">疫情宣導</div></button>
           <!-- Modal -->
           <div class="modal fade" id="myModal" role="dialog">
               <div class="modal-dialog">
